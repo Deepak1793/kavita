@@ -1,0 +1,90 @@
+Problem solving tools and techniques
+------------------------------------ 
+- Algorithm
+- Flowchart
+
+Advantages
+------------
+  neutral solution
+- provide a generic solution for the problems
+- these generic solutions can be implemented with different technology
+
+Algorithm
+---------- 
+- Basic english text representation of solution
+- step by step process to find a final solution
+- english description of a solution
+- The algorithm written by one person may differ from other person
+
+
+Algorithm to withdraw money from ATM machine
+
+Step 0:start
+step 1:insert the debit card into ATM machine
+step 2:Read the instructions
+step 3: enter the ammount to be withdrawn
+step 4: enter PIN 
+step 5: collect the cash
+step 6: collect the card
+step 7: collect the receipt
+step 8: stop /end
+
+
+adding -ve scenarios
+
+Step 0:start
+step 1:insert the debit card into ATM machine
+        step 1.1:if the card is detected goto step 2
+        step 1.2:(card is not detecting)else goto step1
+step 2: Read the instructions
+step 3: enter the amount to be withdrawn
+        step 3.1: if the amount to correct(proper amount in whole no)
+        step 3.2: else goto step3 
+step 4: enter PIN 
+         step 4.1: if the PIN entered is wrong , display "incorrect PIN" and goto step 4
+         step 4.2: if customer have insufficient balance/limit exceeds/machine doesnot have sufficient cash , display "enter correct amount"
+         step 4.3: else goto step5
+step 5: collect the cash
+step 6: collect the card
+step 7: collect the receipt
+step 8: stop /end
+
+
+
+Task:
+1.Write the complete algorithm to deposit money into the cash deposit machine
+2.wite the complete algorithm to apply for Housing loan in your bank
+3.wite the complete algorithm to open a bank account (savings)
+4.wite the complete algorithm to apply PASSPORT
+5.wite the complete algorithm to display total loan amount, by inputing the tenure and rate of interest
+
+
+
+Alogorithm to add 2 numbers
+step 0: start
+step 1:input 2 numbers
+step 2: calculate the sum of 2 numbers
+step 3: Display the sum
+step 4: stop
+
+
+Algorithm to check the eligibility to open the savings account for Indian person
+step 0:start
+step 1:input the age
+step 2: store age "customer_age" 
+step 3: check if "customer_age"  >=18
+       step 3.1: Then display "You are eligible to open account" and goto step 4
+       step 3.2: else("customer_age"  <=18) display "You are eligible to open account" and goto step 4
+step 4: end/stop
+
+
+
+
+
+
+
+
+
+
+
+
