@@ -68,7 +68,7 @@ step 3: Display the sum
 step 4: stop
 
 
-Algorithm to check the eligibility to open the savings account for Indian person
+Algorithm to check the eligibility to open the savings account for Indian 
 step 0:start
 step 1:input the age
 step 2: store age "customer_age" 
@@ -76,6 +76,74 @@ step 3: check if "customer_age"  >=18
        step 3.1: Then display "You are eligible to open account" and goto step 4
        step 3.2: else("customer_age"  <=18) display "You are eligible to open account" and goto step 4
 step 4: end/stop
+
+
+Data structure:
+
+memory structure allocated in the system.
+
+Array:
+- can store homogenous(same) data 
+- index start with 0 
+- last index  = n-1  : n-->total length of the arrary
+- 
+
+Linear searching
+- very inefficient way of finding an element from a data structure which is already sorted.
+- very useful when finding the element from a data structure which is not sorted.
+- the best case scenario : finding the element of array in first index
+- the worst case scenario :finding the element of array in last index
+
+
+Binary searching
+- very efficient way of finding an element from a data structure which is already sorted.
+- very unuseful when finding the element from a data structure which is not sorted.
+- the best case scenario : finding  the element of array in specific index 
+- the worst case scenario :depending on how deeper we are going inside the tree
+
+
+1 single page from a book of 2000 pages
+
+1st time ---> 1/2000
+2nd time ---->1/1000
+3rd time---> 1/500
+4th time ---> 1/250
+5th time ---> 1/125
+6th time ---> 1/62
+7th time ---> 1/31
+8th time ----> 1/15
+9th time ----> 1/7
+10th time ---> 1/3
+11th time ---> 1/1
+
+
+Algorithm for linear searching to find the account number of customer
+
+step 0: start
+step 1: get the input for the account numbers of 100 customers to a  number array (accounts)
+step 2: get the input of the account number to be searched (sno)
+step 3: for i=0 upto n-1 (i<n) , i+1
+step 4 :check if sno ==accounts[i]
+step 5: if true, display "customer exists" and then goto step 7
+step 6 : else goto step 3        
+step 7: stop
+
+
+Algorithm to display the name 100 times
+
+
+step 0: start
+step 1: input the name and store into "name"
+step 2: repeat 100 times / for i=0 upto 99 , i=i+1
+step 3: Display name
+step n:stop
+
+
+Task:
+Algorithm to find the account number of customer using Binary search
+
+
+
 
 
 
