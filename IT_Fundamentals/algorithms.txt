@@ -141,6 +141,21 @@ step n:stop
 
 Task:
 Algorithm to find the account number of customer using Binary search
+step 0: start
+step 1: get the input for the account numbers of 100 customers to a  number array (accounts)
+step 2: get the input of the account number to be searched (sno)
+step 3: create start =0 , end = n-1 , mid= (start+end)/2
+step 4:for i=0 upto n-1 (i<n) , i+1 
+        step 4.1: if sno ==accounts[mid],true then
+                step 4.1.1:Display "Customer found" ,end the program
+        step 4.2: else sno> accounts[mid], true then
+                step 4.2.1: start = mid+1 and goto step 4
+        step 4.3: else if sno<accounts[mid], true then
+                step 4.3.1:end=mid-1
+        step 4.4: mid = (start+end)/2
+step 5: Display "customer not found"
+step 6: stop /end
+
 
 
 
