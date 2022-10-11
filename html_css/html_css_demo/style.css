@@ -1,5 +1,36 @@
-
-h1{
-    color: orangered;
+body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
+
+header{
+    background-color: black;
+    color: orangered;
+    height: 12vh;
+    font-weight: bolder;
+    border-bottom: 3px solid orangered;
+    width: 100%;
+}
+
+header h1{
+    margin: 0;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+
+.section1{
+    text-align: center;
+    background: url(images/b_img1.jpg);
+    background-size: cover;
+    height: 90vh;
+    color: cornsilk;
+    padding-top: 10vh;
+}
+
+.section1 img{
+    border-radius: 50%;
+    /* height: 200px;
+    width: 400px; */
+    padding-top: 2vh;
+}
+
