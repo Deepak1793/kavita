@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        section{
+            background-color: rgb(141, 238, 141);
+            display: inline-block;
+            width: 30%;
+        }
+
+        article{
+            /* background-color: rgb(245, 222, 225); */
+            display: inline-block;
+            width: 40%;
+            margin-left:400px;
+        }
+
+        img{
+            float: right;
+        }
+        form{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+   <section>
+    <h1>Section</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus architecto similique ea, incidunt quod illum ab velit a iusto non earum sequi, beatae necessitatibus. Eius modi voluptate, sed nostrum voluptatum laborum adipisci vero voluptatibus commodi. Quisquam aliquam voluptatum illo sequi blanditiis dolorem a, nobis, tempore rem quasi quia nemo corrupti?</p>
+   </section>
+
+
+   <!-- <article>
+    <img src="images/img2.jpg" alt="">
+    <img src="images/img1.jpg" alt="">
+   </article> -->
+
+   <form method="post" action="https://www.amazon.in/">
+    <input type="text" placeholder="Enter your name" name="user_name"><br><br>
+    <input type="password" placeholder="password" name="pwd"><br><br>
+    <input type="color" name="user_color"><br><br>
+
+    Languages you prefer:
+    <br>
+<input type="radio" name="fav_language" value="HTML">html
+<br>
+<input type="radio"  name="fav_language" value="CSS">css
+<br>
+<input type="radio"  name="fav_language" value="JavaScript">js <br>
+
+<button type="reset">Reset</button><br>
+<!-- <input type="submit" value="Register"> -->
+<button type="submit">Register</button>
+   </form>
+</body>
+</html>

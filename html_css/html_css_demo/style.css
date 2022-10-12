@@ -10,6 +10,7 @@ header{
     font-weight: bolder;
     border-bottom: 3px solid orangered;
     width: 100%;
+    position: fixed;
 }
 
 header h1{
@@ -44,6 +45,8 @@ header h1{
 .section1 p{
     width: 60vw;
     margin: 5vw auto;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 40px;
 }
 
 .section1 #profile_link{
@@ -80,5 +83,9 @@ footer{
     border-top: 3px solid orangered;
 }
 
+#icon{
+    color:#653514;
+    font-size: 30px;
+}
 
 
