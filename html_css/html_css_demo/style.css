@@ -29,8 +29,56 @@ header h1{
 
 .section1 img{
     border-radius: 50%;
-    /* height: 200px;
-    width: 400px; */
+    height: 250px;
+    width: 250px;
     padding-top: 2vh;
+    border: red solid 3px;
+    box-shadow:20px 10px 50px white;
+    transition: transform ease-out 1s;
 }
+
+.section1 img:hover{
+    transform:scale(1.5,1.5);
+}
+
+.section1 p{
+    width: 60vw;
+    margin: 5vw auto;
+}
+
+.section1 #profile_link{
+    text-decoration: none;
+    display:block;
+    background-color: orangered;
+    color: white;
+    width: 8vw;
+    border-radius: 10px;
+    margin: 5vh auto;
+    padding: .4em .3em;
+    border: 2px solid white;
+}
+
+.section1 #profile_link:hover{
+    border: 2px solid orangered;
+    color: rgb(200, 207, 223);
+    background-color: white;
+}
+
+.section2{
+    background: url(images/b_img3.jpg);
+    background-size: cover;
+    color: white;
+    height: 50vh;
+    padding: 1.5em;
+}
+
+footer{
+    background-color: rgb(66, 62, 62);
+    color: white;
+    height: 25vh;
+    padding-top: 1.5em;
+    border-top: 3px solid orangered;
+}
+
+
 
