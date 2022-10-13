@@ -1,0 +1,204 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input{
+            width: 200px;
+            height: 25px;
+            background-color: rgb(213, 203, 203);
+          border:none;
+          border-bottom: solid 2px red;
+          caret-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="off" action="#" target="_blank" method="get">
+ <fieldset>
+     <legend>Registration form</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Name</label>
+                </td>
+                <td>
+                    <input type="text" name="User_name" required maxlength="10" placeholder="Enter your Name" autofocus >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Contact Number</label>
+                </td>
+                <td>
+                    <input type="number" name="Contact_Number" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password" name="Password" >
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>
+                    <input type="email" name="e-mail">
+                </td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td>
+                    <input type="date" name="date">
+                </td>
+            </tr>
+           
+            <tr>
+                <td>Time of Birth</td>
+                <td><input type="time" name="time" ></td>
+            </tr>
+            <tr>
+                <td>Date & Time</td>
+                <td>
+                    <input type="datetime-local" name="date-time" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Week
+                </td>
+                <td>
+                    <input type="week" name="week">
+                </td>
+            </tr>
+            <tr>
+                <td>Month</td>
+                <td>
+                    <input type="month" name="Month" >
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    Male <input type="radio" name="gender" value="male">
+                    Female <input type="radio" name="gender" value="female">
+                    Others <input type="radio" name="gender" value="others" >
+                </td>
+            </tr>
+            <tr>
+                <td>Languages known</td>
+                <td>
+                   English <input type="checkbox" name="lang" id="" value="eng">
+                   Kannada <input type="checkbox" name="lang" id="" value="kan">
+                   Hindi <input type="checkbox" name="lang" id="" value="hindi">
+                   Korean <input type="checkbox" name="lang" id="" value="korean">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Country
+                </td>
+                <td>
+                    <select name="Country" multiple size=2>
+                        <option value="India">India</option>
+                        <option value="America" selected>America</option>
+                        <option value="Dubai">Dubai</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Favourite brands</td>
+                <td>
+                    <input type="text" list="li">
+                    <datalist id="li">
+                        <option value="Nike">Nike</option>
+                        <option value="Tommy hilfigure">Tommy hilfigure</option>
+                        <option value="Raymonds">Raymonds</option>
+                        <option value="Ramraj">Ramraj</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Residential Address
+                </td>
+                <td>
+                    <textarea name="Address" placeholder="address" cols="50" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose color</td>
+                <td><input type="color" name="Color" id=""></td>
+            </tr>
+            <tr>
+                <td>Range of Salary</td>
+                <td><input type="range" name="Salary" id="" min="100000" max="1000000" value="500000"></td>
+            </tr>
+            <tr>
+                <td>Upload your Resume</td>
+                <td><input type="file" name="Resume" multiple ></td>
+            </tr>
+            <tr>
+                <td>
+                    <canvas style="border:2px solid black;height:50px;width:100px"></canvas>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+        
+    </fieldset> 
+       
+    </form>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Forms</title>
+    <style>
+        input{
+            width: 300px;
+            height: 40px;
+            font-size:25px;
+            border:2px solid gray;
+            border-radius: 10px;
+            caret-color:red;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="#">
+        
+        <table>
+            <tr>
+                <td><i class="fa fa-user-circle-o" aria-hidden="true" style="font-size:70px;color: blue;"></i></td>
+                <td><input type="text" name="User_name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-eye-slash" aria-hidden="true" style="font-size:70px;color: green;"></i></td>
+                <td><input type="password" name="pwd" placeholder="Enter your Password" ></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-phone" aria-hidden="true" style="font-size:70px;color: red;"></i></td>
+                <td><input type="number" name="cn" placeholder="Enter your ContactNumber"></td>
+            </tr>
+        </table>
+    
+    </form>
+</body>
+</html> -->
+ <!-- ***************************** -->

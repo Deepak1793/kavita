@@ -26,6 +26,7 @@ header h1{
     height: 90vh;
     color: cornsilk;
     padding-top: 10vh;
+    background-attachment: fixed;
 }
 
 .section1 img{
@@ -46,7 +47,7 @@ header h1{
     width: 60vw;
     margin: 5vw auto;
     font-family: 'Comforter Brush', cursive;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .section1 #profile_link{
@@ -78,14 +79,25 @@ header h1{
 footer{
     background-color: rgb(66, 62, 62);
     color: white;
-    height: 25vh;
+    height: 40vh;
     padding-top: 1.5em;
     border-top: 3px solid orangered;
 }
 
 #icon{
-    color:#653514;
+    color:white;
     font-size: 30px;
+}
+
+.a{
+    display: inline-block;
+    background-color: bisque;
+    width: 200px;
+    /* height: 40px; */
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+    padding: 20px;
 }
 
 
