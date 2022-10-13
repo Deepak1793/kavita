@@ -6,3 +6,6 @@ th --> table heading
 vertical-alignment : top 
                     bottom
                      middle
+
+rowspan --> spans the row
+colspan ---> spans the column
