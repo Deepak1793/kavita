@@ -1,0 +1,13 @@
+.user-grid{
+    background-color:brown;
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    margin: 3px;
+    color: white;
+}
+
+.user-container{
+    background-color: yellow;
+}
