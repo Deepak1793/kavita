@@ -1,19 +1,19 @@
 .user-grid{
-    background-color:brown;
-    height: 200px;
+    /* background-color:brown; */
+    height: 30vh;
     text-align: center;
-    font-size: 25px;
+    /* font-size: 25px; */
     font-family: cursive;
     margin: 3px;
-    color: white;
+    /* color: white; */
 }
 
 .user-container{
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 img{
-    height:50vh;
+    height:30vh;
 }
 
 /* .user-btn{
