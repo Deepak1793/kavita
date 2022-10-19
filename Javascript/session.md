@@ -25,3 +25,79 @@ Types of JS:
 
 - Document - webpage
 
+console --> debugging / developer
+
+Variables
+--------- 
+It is a named location which holds the data
+
+- let
+- var
+- const
+- without using any keyword
+
+Identifier
+----------
+name of variable , function, property.....
+
+- 1st character should not start with number
+- It can contain number, alphabets 
+- Camelcase convention
+
+userData
+userdata
+
+Datatypes
+--------- 
+primitive datatype
+------------------ 
+- string - " ", ' ', ` `
+- number
+- boolean - true , false
+- undefined
+- null
+- Symbol
+- Bigint
+
+Non-primitive datatype
+----------------------
+- object
+- function
+
+
+Global scope 
+Local scope - var
+block scope - let
+
+
+Wrapping 
+
+Operators
+--------- 
+- Arithmetic
+- Logical 
+- unary 
+   - increment - pre ,post
+   - decrement - pre, post
+- Assignment operator
+- Comparision / relational
+- Bitwise
+- Ternary
+.....
+
+AND (&&)
+
+value1    &&    value2     =     Result
+true      &&        false  =     false
+true      &&        true   =     true
+false     &&        false  =     false
+false      &&       true   =     false
+
+
+OR (||)
+
+value1    ||    value2     =     Result
+true      ||        false  =     true
+true     ||       true   =     true
+false     ||        false  =     false
+false      ||       true   =     true
