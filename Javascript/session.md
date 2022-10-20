@@ -59,8 +59,8 @@ primitive datatype
 - Symbol
 - Bigint
 
-Non-primitive datatype
-----------------------
+Non-primitive datatype / Reference datatype
+-------------------------------------------
 - object
 - function
 
@@ -108,3 +108,18 @@ Pop -up
 - alert 
 - confirm
 - prompt
+
+
+Arrays
+------ 
+- Literal approach - []
+- constructor approach - Array()
+
+function
+--------- 
+- Normal function
+- Anonymous function
+- Function Expression
+- Arrow function
+- call back function
+- IIFE
