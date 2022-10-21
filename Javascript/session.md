@@ -123,3 +123,20 @@ function
 - Arrow function
 - call back function
 - IIFE
+
+3 categories of objects
+----------------------- 
+- Native Objects
+- Host Objects - DOM
+- User defined Objects
+ - Object literal approach
+ - Constructor function
+    - Inbuilt constructor - Object()
+    - User-defined constructor
+ - object.create()
+
+
+JSON
+----
+Javascript Object Notation
+
