@@ -110,6 +110,7 @@ var add3 = (value1,value2,value3,value4)=> {
     console.log(sum);
 }
 add3(5,5,3,2.33)
+add3(10,10,10,20)
 
 
 function name1() {

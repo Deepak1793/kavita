@@ -193,5 +193,8 @@ console.log(breed);
 //2.Create objects using literal, function constructor , class expression , class declaration
 
 
-
+[15, 16, 17, 18, 19].reduce(
+    (previous, current) => previous * current
+   
+  );
 

@@ -140,3 +140,39 @@ JSON
 ----
 Javascript Object Notation
 
+DOM
+---
+- Document Object Model
+- Document - Webpage
+- API - Application programming interface - messanger
+- DOM defines the logical structure of the document
+- Elements are called as nodes
+- nodes are treated as objects
+- objects will have properties and behaviours 
+- access and modify the DOM elements
+
+Types of Node
+-------------- 
+- Document node
+- Doctype node
+- element node - tag 
+- comment node
+- Text node - text content
+- Attribute node - attributes
+
+
+Methods for accessing the elements are:
+-------------------------------------- 
+- getElementById()
+- getElementsByClassName()
+- getElementsByTagName()
+- querySelector()
+- querySelectorAll().........
+
+Properties like
+--------------- 
+- innerHTML
+- innerText
+- attribute
+- style..........
+
