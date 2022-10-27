@@ -39,6 +39,24 @@ document.querySelector("#add").addEventListener("click",function(){
    document.getElementById("result").innerText = `${input1} + ${input2} = ${sum}`
 })
 
+/////////////////////////////////////////////// 
+
+document.getElementById("content").addEventListener("click",function(){
+    // document.querySelector("#content").align = "right"
+    document.querySelector("#content").style="text-align:right"
+})
+///////////////////////////////////
+
+document.querySelector("#heading3").addEventListener("dblclick", ()=> {
+    document.getElementById("heading3").style="border:2px red solid;font-size:40px;color: brown"
+    document.getElementById("heading3").innerText="Welcome"
+   
+})
+
+document.getElementById("heading3").addEventListener("click",function(){
+    document.getElementById("image").style="border:2px green solid;height:100px;width:100px"
+    document.getElementById("image").src="b_img3.jpg"
+})
 
 
 
