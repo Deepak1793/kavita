@@ -189,6 +189,6 @@ Promise
 state         Result
 ------        -------            
 Pending   -  undefined
-fulfilled(Resolved) -  result (actual data)
-Rejected  - error object
+fulfilled(Resolved) -  result (actual data) - then()
+Rejected  - error object - catch()
 

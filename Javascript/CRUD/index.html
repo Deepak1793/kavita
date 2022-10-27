@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH API</title>
+</head>
+
+<body>
+    <div id="employeeList">
+        <table>
+            <thead>
+           
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email ID</th>
+                <th></th>
+            
+        </thead>
+        <tbody>
+
+        </tbody>
+        </table>
+        
+    </div>
+
+    <hr>
+    <h1>Employee Entry Form</h1>
+    <form onsubmit="addEmployee(event)">
+        Name: <input type="text" name="name" id="employeeName" required><br>
+        Email: <input type="email" name="email" id="employeeMailID" required><br>
+        <input type="submit" value="ADD">
+    </form>
+
+    <hr>
+    <h1>Employee Edit Form</h1>
+    <form onsubmit="editEmployee(event)">
+        ID: <input type="number" name="id" id="editEmployeeID" readonly><br>
+        Name: <input type="text" name="name" id="editEmployeeName" required><br>
+        Email: <input type="email" name="email" id="editEmployeeMailID" required><br>
+        <input type="submit" value="Update">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
