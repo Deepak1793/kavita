@@ -176,3 +176,19 @@ Properties like
 - attribute
 - style..........
 
+Fetch API
+----------
+- For making a request and fetching a resource, use the fetch() method.
+- The fetch() method takes one mandatory argument, the path to the resource you want to fetch. 
+- It returns a Promise
+
+Promise
+------- 
+- Object
+
+state         Result
+------        -------            
+Pending   -  undefined
+fulfilled(Resolved) -  result (actual data)
+Rejected  - error object
+

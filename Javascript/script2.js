@@ -170,3 +170,18 @@ function model(age,name) {
 model(23,fan)
 
 
+//Asynchronous code
+
+var a=1
+var b=10
+
+
+setTimeout(function(){
+    console.log("Hello");
+},5000)
+ 
+
+console.log(a);
+console.log(b);
+
+
