@@ -34,3 +34,18 @@ Globally
 
 - npm run test
 
+steps to add eslint
+------------------- 
+- add eslint extension
+- npm install eslint
+- config file - .\node_modules\.bin\eslint --init  
+- package.json 
+ "scripts": {
+   
+    "lint": "eslint .",
+    "lint-fix":"eslint . --fix" 
+  }
+
+  - npm run lint
+  - npm run lint-fix
+

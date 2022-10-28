@@ -4,7 +4,9 @@
   "description": "Unit testing Demo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint .",
+    "lint-fix":"eslint . --fix"
   },
   "author": "Kavitha",
   "license": "ISC",
@@ -12,6 +14,7 @@
     "mocha": "^10.1.0"
   },
   "devDependencies": {
-    "chai": "^4.3.6"
+    "chai": "^4.3.6",
+    "eslint": "^8.26.0"
   }
 }
