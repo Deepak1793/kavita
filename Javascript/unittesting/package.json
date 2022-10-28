@@ -1,0 +1,17 @@
+{
+  "name": "unittesting",
+  "version": "1.0.0",
+  "description": "Unit testing Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Kavitha",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6"
+  }
+}
