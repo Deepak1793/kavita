@@ -23,8 +23,36 @@
               </div>
             )
         }
-    ReactDOM.render(<Header/>, document.getElementById("main_container"))
 
+        const Footer=()=>{
+            return(
+                <div>
+                    <h1>Footer &copy; 2022</h1>
+                </div>
+            )
+        }
+
+
+    // ReactDOM.render(<Header/>, document.getElementById("main_container"))
+
+    // ReactDOM.render(<div>
+    //     <Header/>
+    //     <Footer/>
+    //     </div>,document.getElementById("main_container"))
+
+
+       const UserCard=(props)=>{
+        return(
+            <div>
+                <p>I am {props.name} </p>
+                <p>I am from {props.location}</p>
+                <p>I am {props.age} years old</p>
+                </div>
+        )
+       }
+
+       ReactDOM.render(<UserCard name="Arun" location="Mumbai" age="23" />, document.getElementById("main_container"))
+   
         
     </script>
 </body>

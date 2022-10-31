@@ -52,6 +52,7 @@ Setting up environment
 Babel - transpiler
 ------------------- 
 - jsx ---> Javascript
+- https://unpkg.com/@babel/standalone@7.20.0/babel.min.js
 
 
 
