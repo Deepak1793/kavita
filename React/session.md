@@ -55,5 +55,16 @@ Babel - transpiler
 - https://unpkg.com/@babel/standalone@7.20.0/babel.min.js
 
 
+# There are 3 phases of component
+1.Initilising phase - initialising and memory allocation for a componet
+2.Mounting phase - renders all the content on browser
+3.Unmounting phase - component will be destroyed or removed
+
+# Class based components have some lifecycle methods 
+- componentDidMount() 
+- componentDidUpdate()
+- componentWillUnmount()
+
+
 
  
