@@ -66,5 +66,52 @@ Babel - transpiler
 - componentWillUnmount()
 
 
+# props - are used to pass data from parent component to child component
+
+# State
+- used for managing the data for specific component
+- are objects that determine components and rendering behaviour
+- changes in state will also change in component data
+- state can have property/ array/ array of objects
+- state is private to the component
+- state of one component cannot be accessed from another component
+
+
+# Task-1
+- create a users component (rfc)  and usersList component (rfc)
+- usersList component as a child of users component
+- use props to send data from parent to child component
+- create a state in users component by name customer
+- initial value of the state should be array of customer obj - atleast 5 value
+- obj [{
+    name:
+    accountType:
+    accountNo:
+    email:
+    contactNo:
+    DOB:
+
+}]
+
+- onchangestate display only one customer obj
+
+# Task-2
+- create customerList componet using (rcc)
+- usersList component as a child of customerList component
+- create a state in customerList component by name customer
+- initial value of the state should be array of customer obj - atleast 5 value
+- obj [{
+    name:
+    accountType:
+    accountNo:
+    email:
+    contactNo:
+    DOB:
+
+}]
+- onchangestate display only one customer obj
+
+
+
 
  
