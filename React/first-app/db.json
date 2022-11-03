@@ -1,0 +1,18 @@
+{
+  "customerdata": [
+    {
+      "id": "644194a9-bb82-4a47-a142-0aec35120dba",
+      "fname": "Kavitha",
+      "lname": "M",
+      "email": "k@gmail.com",
+      "phone": "09876542132"
+    },
+    {
+      "id": "b2a6b6f4-f31c-4865-aece-fbf550719a4a",
+      "fname": "Anu",
+      "lname": "M",
+      "email": "a@gmail.com",
+      "phone": "31231212132313"
+    }
+  ]
+}

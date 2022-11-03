@@ -124,3 +124,6 @@ npm install uuid - to get unique id
 # Fetching the data from 3rd party API
 
 - npm install axios
+
+# Task 
+- Create a resource by name bankdata and store the bank information with the property name, ifsc_code, h.o, nationalized_bank by using json-server(FAKE REST API)

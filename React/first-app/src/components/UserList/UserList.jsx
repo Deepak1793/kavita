@@ -26,6 +26,8 @@ useEffect(() => {
     })
 }, [])
 
+ 
+
     // const Display=()=>{
     //     fetch("https://jsonplaceholder.typicode.com/users")
     //     .then(res=>res.json())

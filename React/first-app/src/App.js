@@ -3,6 +3,8 @@ import CustomerList from "./components/CustomerList/CustomerList";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import PersonList from "./components/PersonList/PersonList";
+import SaveCustomerList from "./components/SaveCustomerList/SaveCustomerList";
 import UserList from "./components/UserList/UserList";
 
 function App() {
@@ -14,8 +16,9 @@ function App() {
       {/* <Dashboard/> */}
       {/* <Footer/> */}
  {/* <CustomerList/> */}
- <UserList/>
-     
+ {/* <UserList/> */}
+     {/* <PersonList/> */}
+     <SaveCustomerList/>
     </div>
   );
 }
