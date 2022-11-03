@@ -120,3 +120,7 @@ npm install uuid - to get unique id
 - Create MovieList(CustomerList) component as a parent and  Movie(Contacts) as a child component
 - take a data adout a movie having name,main_artist,language,duration,rating from the user and into the movies arrary
 - Retrieve the data from the movies array and display it on the webpage
+
+# Fetching the data from 3rd party API
+
+- npm install axios
