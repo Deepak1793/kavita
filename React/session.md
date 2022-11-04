@@ -127,3 +127,8 @@ npm install uuid - to get unique id
 
 # Task 
 - Create a resource by name bankdata and store the bank information with the property name, ifsc_code, h.o, nationalized_bank by using json-server(FAKE REST API)
+
+# Routing
+
+- react-router-dom
+- npm install react-router-dom@6
