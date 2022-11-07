@@ -6,6 +6,7 @@ import {BrowserRouter,Route,Routes} from "react-router-dom";
 import NotFound from "./Components/NotFound/NotFound";
 import PersonList from "./Components/PersonList/PersonList";
 import Profile from "./Components/Profile/Profile";
+import AddContact from "./Components/AddContact/AddContact";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/contactus" element={<ContactUs/>}/>
       <Route path="/persondata" element={<PersonList/>}/>
       <Route path="/profile/:id" element={<Profile/>}/>
+      <Route path="/addcontact" element={<AddContact/>}/>
       <Route path="*" element={<NotFound/>}/>
       </Routes>
       </BrowserRouter>

@@ -1,0 +1,20 @@
+{
+  "contacts": [
+    {
+      "firstname": "Pankaj",
+      "lastname": "M",
+      "email": "p@gmail.com",
+      "city": "Udupi",
+      "phone": 1312131312,
+      "id": 1
+    },
+    {
+      "firstname": "Pppja",
+      "lastname": "K",
+      "email": "p@gmail.com",
+      "city": "Udupi",
+      "phone": 1312131312,
+      "id": 2
+    }
+  ]
+}

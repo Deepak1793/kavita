@@ -26,6 +26,9 @@ export default function Header() {
           <li className="nav-item">
           <Link className="nav-link" to="/persondata">Users</Link>
           </li>
+          <li className="nav-item">
+          <Link className="nav-link" to="/addContact">Add Customer</Link>
+          </li>
          
         </ul>
        
