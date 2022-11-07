@@ -1,0 +1,78 @@
+Mock Hackathon:
+
+In this case study you will implement an application to design a student account dashboard which allows students 
+for seeing their progress like their grade, assignments and other of his academic details. 
+
+
+Technologies and tools to be used:
+
+	- Bootstrap
+	- HTML5, CSS3 and Javascript
+
+Backend:
+
+	- Create a fake api using json-server and deploy a fake db named db.json for storing and retrieving 
+student details.
+
+
+Design:
+
+	- Register & Login: Students should be able to register and login to the system
+
+Students need to register:
+
+	- While registering, students need to provide the following information (you should design form for 
+accepting the below details)
+
+
+	Fields to be registered for a new user are:
+
+		1. First name
+		2. Last name
+		3. Username (@Id)
+		4. Address
+		5. Roll number
+		6. Email
+		7. Phone number
+		8. Password
+
+	- Proper form validations must be applied for the above fields such as checking if the email and phone numbers are valid, 
+fields can't be empty. Identify as much as validations as you can.
+
+	- On the click of the register button, the student details must be stored into the db.json file after the basic field 
+validations mentioned in the previous point.
+
+	- Display an alert or warning message if registration failed.
+
+After registration:
+
+	- On successful registration the student should be taken to the login page and be able to login with the username and password 
+used to register.
+
+Login page:
+
+	- Design the login form with the following fields.
+
+		1. Username
+		2. Password
+
+	- On login button click, the entered details must be validated and the student need to be taken to his dashboard page.
+	Note. "You can design the dashboard with some static content".
+
+Logout button:
+
+	- Place the logout button on the dashboard at the top right corner of the page
+	- On click of the logout button simply redirect the student to the login page again
+
+
+
+General instructions:
+
+	- The total duration of the hackathon is 3 hours
+	- Ask your queries within the first 10 minutes after the start of the hackathon
+	- Submissions after the actual duration is over will not be considered for evaluation
+	- Start your solutions after creating a gitlab repo and keep pushing the changes to your remote repository
+	- Give reporter access to your respective stackroute and natwest mentors
+	- Incase of any issues during hackathon reach out to your mentors
+
+

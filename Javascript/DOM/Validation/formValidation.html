@@ -1,0 +1,104 @@
+</html>
+<!-- Complete form validation -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <style>
+        p {
+            display: block;
+            color: red;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.facebook.com/" method="post" autocomplete="off" onsubmit="return formSubmit()">
+        Name: <input type="text" name="name" id="uname">
+        <p id='para1'>Invalid</p>
+        Mobile Number: <input type="number" name="" id="umob">
+        <p id="para2">Invalid</p>
+        Password: <input type="text" name="password" id="upwd">
+        <p id='para3'>Invalid</p>
+        E-mail Id: <input type="text" name="e-mail" id="umail">
+        <p id='para4'>Invalid</p>
+       <input type="submit" value="Submit">
+       <input type="reset" value="Reset">
+        
+    </form>
+    <script>
+        document.getElementById('uname').addEventListener('keyup', function () {
+            var name = document.getElementById('uname').value
+            var exp = /^[a-z A-Z \.]{3,}$/  //Kavitha
+            if (exp.test(name)) {
+                document.getElementById('uname').className = 'valid'
+                document.getElementById('uname').style.border = '2px solid green'
+                document.getElementById('para1').style.visibility = 'hidden'
+            } else {
+                document.getElementById('uname').className = 'Invalid'
+                document.getElementById('para1').style.visibility = 'visible'
+                document.getElementById('uname').style.border = '2px solid red'
+            }
+        })
+
+        document.getElementById('umob').addEventListener('keyup', function () {
+            var mobile = document.getElementById('umob').value
+            var exp2 = /^[6-9][0-9]{9}$/ //8236466
+            if (exp2.test(mobile)) {
+                document.getElementById('umob').className = 'valid'
+                document.getElementById('umob').style.border = '2px solid green'
+                document.getElementById('para2').style.visibility = 'hidden'
+            }
+            else {
+                document.getElementById('umob').className = 'Invalid'
+                document.getElementById('para2').style.visibility = 'visible'
+                document.getElementById('umob').style.border = '2px solid red'
+            }
+        })
+
+        document.getElementById('upwd').addEventListener('keyup', function () {
+            var password = document.getElementById('upwd').value
+            var exp3 = /^[a-zA-Z0-9]{7,10}$/
+            if (exp3.test(password)) {
+                document.getElementById('upwd').className = 'valid'
+                document.getElementById('upwd').style.border = '2px solid green'
+                document.getElementById('para3').style.visibility = 'hidden'
+            } else {
+                document.getElementById('upwd').className = 'Invalid'
+                document.getElementById('para3').style.visibility = 'visible'
+                document.getElementById('upwd').style.border = '2px solid red'
+            }
+        })
+
+        document.getElementById('umail').addEventListener('keyup', function () {
+            var mail = document.getElementById('umail').value
+            var exp4 = /^([a-zA-Z\.-]+)@([a-zA-Z-]+)\.([a-z]{2,8})(.[a-z]{2,8})?$/
+            if (exp4.test(mail)) {
+                document.getElementById('umail').className = 'valid'
+                document.getElementById('umail').style.border = '2px solid green'
+                document.getElementById('para4').style.visibility = 'hidden'
+            } else {
+                document.getElementById('umail').className = 'Invalid'
+                document.getElementById('para4').style.visibility = 'visible'
+                document.getElementById('umail').style.border = '2px solid red'
+            }
+        })
+
+        function formSubmit(input){
+            for (index = 0; index < 4; index++) {
+                if (document.querySelectorAll('input')[index].getAttribute("class") == 'Invalid' || document.querySelectorAll('input')[index].value == "") {
+                    alert("Registration not successful")
+                    return false
+                }
+            }
+            return true
+        }
+    </script>
+</body>
+
+</html>
