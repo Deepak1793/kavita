@@ -1,0 +1,95 @@
+</html>
+<!-- Complete form validation -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <style>
+        p {
+            display: block;
+            color: red;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <form  target="_blank" action="https://www.amazon.in/" method="post" autocomplete="off" onsubmit="return formlogin()">
+       
+       
+        E-mail Id: <input type="text" name="e-mail" id="umail" required>
+        <p id='para4'>Invalid</p>
+        Password: <input type="text" name="password" id="upwd" required>
+        <p id='para3'>Invalid</p>
+       <input type="submit" value="Login">
+     
+        
+    </form>
+    <script>
+       
+        document.getElementById('upwd').addEventListener('keyup', function () {
+            var password = document.getElementById('upwd').value
+            var exp3 = /^[a-zA-Z0-9]{7,10}$/
+            if (exp3.test(password)) {
+                document.getElementById('upwd').className = 'valid'
+                document.getElementById('upwd').style.border = '2px solid green'
+                document.getElementById('para3').style.visibility = 'hidden'
+            } else {
+                document.getElementById('upwd').className = 'Invalid'
+                document.getElementById('para3').style.visibility = 'visible'
+                document.getElementById('upwd').style.border = '2px solid red'
+            }
+        })
+
+        document.getElementById('umail').addEventListener('keyup', function () {
+            var mail = document.getElementById('umail').value
+            var exp4 = /^([a-zA-Z\.-]+)@([a-zA-Z-]+)\.([a-z]{2,8})(.[a-z]{2,8})?$/
+            if (exp4.test(mail)) {
+                document.getElementById('umail').className = 'valid'
+                document.getElementById('umail').style.border = '2px solid green'
+                document.getElementById('para4').style.visibility = 'hidden'
+            } else {
+                document.getElementById('umail').className = 'Invalid'
+                document.getElementById('para4').style.visibility = 'visible'
+                document.getElementById('umail').style.border = '2px solid red'
+            }
+        })
+
+        function formlogin(){
+           
+            var password = document.getElementById('upwd').value
+            var mail = document.getElementById('umail').value
+
+            fetch(`http://localhost:3001/StudentData?email=${mail}`)
+           .then(res=>res.json())
+           .then(data=>{
+            console.log(data);
+            if(data.length===0){
+                alert("Email address does not exist")
+            }
+           
+            if(data[0].passw===password){
+                console.log("Success");
+                return true;
+            }
+            else{
+                alert("Incorrect Password")
+                return false
+            }
+           })
+
+
+        
+
+        }
+    
+           
+        
+    </script>
+</body>
+
+</html>
