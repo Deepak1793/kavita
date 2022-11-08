@@ -1,0 +1,26 @@
+{
+  "StudentData": [
+    {
+      "title": "devendra",
+      "lname": "kumar",
+      "username": "kumards",
+      "address": "40 sdfsd sd dsfdsfsd sddfsfsdfsdfsdfsdfsdf",
+      "rollnumber": "112234",
+      "email": "kumard@rbos.co.uk",
+      "mobile": "9090909090",
+      "passw": "Delhi123",
+      "id": 1
+    },
+       {
+      "fname": "shashank",
+      "lname": "gulati",
+      "username": "gulasga",
+      "address": "sdfdslfsdljllfsdfsljlsfdsfddsfsdfdfs",
+      "rollnumber": "342343",
+      "email": "gulasga@rbos.co.uk",
+      "mobile": "9898980809",
+      "passw": "Delhi333",
+      "id": 2
+    }
+  ]
+}
