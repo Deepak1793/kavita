@@ -1,20 +1,45 @@
 {
   "contacts": [
     {
-      "firstname": "Pankaj",
-      "lastname": "M",
-      "email": "p@gmail.com",
-      "city": "Udupi",
-      "phone": 1312131312,
+      "firstname": "Mohan",
+      "lastname": "Kumar",
+      "email": "m@gmail.com",
+      "city": "Mumbai",
+      "phone": 13213231454,
       "id": 1
     },
     {
-      "firstname": "Pppja",
-      "lastname": "K",
-      "email": "p@gmail.com",
-      "city": "Udupi",
-      "phone": 1312131312,
+      "firstname": "Radha",
+      "lastname": "Kumari",
+      "email": "r@gmail.com",
+      "city": "Mangalore",
+      "phone": 13213456456,
       "id": 2
     }
+  ],
+  "users": [
+    {
+      "firstname": "Devendra",
+      "lastname": "Kumar",
+      "email": "kumard@rbos.co.uk",
+      "city": "Delhi",
+      "phone": 13212312111,
+      "age": 20,
+      "password": "pass",
+      "confirmpassword": "pass",
+      "id": 1
+    },
+    {
+      "firstname": "Karthik",
+      "lastname": "Raj",
+      "email": "k@rbos.co.uk",
+      "city": "Delhi",
+      "phone": 13212312111,
+      "age": 20,
+      "password": "pass1",
+      "confirmpassword": "pass1",
+      "id": 2
+    }
+
   ]
 }

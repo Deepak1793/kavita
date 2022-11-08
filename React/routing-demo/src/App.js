@@ -7,6 +7,9 @@ import NotFound from "./Components/NotFound/NotFound";
 import PersonList from "./Components/PersonList/PersonList";
 import Profile from "./Components/Profile/Profile";
 import AddContact from "./Components/AddContact/AddContact";
+import ContactList from "./Components/ContactList/ContactList";
+import Register from "./Components/Register/Register";
+import Login from "./Components/Login/Login";
 
 
 function App() {
@@ -21,6 +24,10 @@ function App() {
       <Route path="/persondata" element={<PersonList/>}/>
       <Route path="/profile/:id" element={<Profile/>}/>
       <Route path="/addcontact" element={<AddContact/>}/>
+      <Route path="/contactlist" element={<ContactList/>}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/login" element={<Login/>}/>
+
       <Route path="*" element={<NotFound/>}/>
       </Routes>
       </BrowserRouter>
