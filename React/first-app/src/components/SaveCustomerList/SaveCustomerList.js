@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Contacts from '../Contacts/Contacts'
 import { v4 as uuidv4 } from 'uuid';
-import axios from 'axios'
+// import axios from 'axios'
 
 export default function SaveCustomerList() {
     const [contacts, setcontacts] = useState([])
@@ -14,20 +14,20 @@ export default function SaveCustomerList() {
      setfname(e.target.value)
     }
 
-    useEffect(() => {
-     axios.get("http://localhost:3004/customerdata")
-     .then(res=>{
-      setcontacts(res.data)
-     })
-    }, [])
+    // useEffect(() => {
+    //  axios.get("http://localhost:3004/customerdata")
+    //  .then(res=>{
+    //   setcontacts(res.data)
+    //  })
+    // }, [])
     
 
     const AddContact=()=>{
-       axios.post("http://localhost:3004/customerdata",{id:uuidv4(),fname,lname,email,phone})
-       .then(res=>{
-        console.log(res.data);
-        setcontacts([...contacts,res.data])
-       })
+      //  axios.post("http://localhost:3004/customerdata",{id:uuidv4(),fname,lname,email,phone})
+      //  .then(res=>{
+      //   console.log(res.data);
+      //   setcontacts([...contacts,res.data])
+      //  })
     }
   return (
    
@@ -54,7 +54,7 @@ export default function SaveCustomerList() {
   <input type="number" onChange={(e)=>setphone(e.target.value)} className="form-control" id="exampleFormControlInput4" placeholder="Mobile Number"/>
 </div>
 <div >
-<button className='btn btn-success col-12' onClick={AddContact}>Submit</button>
+<button className='btn btn-success col-12' data-testid="btnsubmit" onClick={AddContact}>Submit</button>
 </div>
             </div>
         </div>

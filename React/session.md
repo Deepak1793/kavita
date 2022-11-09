@@ -134,3 +134,6 @@ npm install uuid - to get unique id
 - npm install react-router-dom@6
 
 - npm install formik yup
+
+# Testing
+- JEST - testing framework
