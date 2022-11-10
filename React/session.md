@@ -139,3 +139,9 @@ npm install uuid - to get unique id
 - JEST - testing framework
 
 # Material UI
+
+# Redux
+- state container for JS apps
+- Basic building blocks of Redux - Store, Action, Reducer
+
+
