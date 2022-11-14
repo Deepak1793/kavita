@@ -144,4 +144,11 @@ npm install uuid - to get unique id
 - state container for JS apps
 - Basic building blocks of Redux - Store, Action, Reducer
 
+- created new application 
+# Dependencies
+- npm install @reduxjs/toolkit
+- npm install redux
+- npm install react-redux
+
+-  npm install @reduxjs/toolkit redux react-redux
 
