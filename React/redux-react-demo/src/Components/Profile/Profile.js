@@ -8,6 +8,7 @@ export default function Profile() {
         <p>Name:{userInfo.name}</p>
         <p>Age:{userInfo.age}</p>
         <p>Company:{userInfo.company}</p>
+       
     </div>
   )
 }
