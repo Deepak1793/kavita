@@ -12,21 +12,40 @@ export default function Login() {
             password:"",
         },
         onSubmit:values =>{
-            fetch(`http://localhost:3004/users?email=${values.email}`)
-           .then(res=>res.json())
-           .then(data=>{
+        //     fetch(`http://localhost:3004/users?email=${values.email}`)
+        //    .then(res=>res.json())
+        //    .then(data=>{
+        //     console.log(data);
+        //     if(data.length===0){
+        //         alert("Email address does not exist")
+        //     }
+        //     if(data[0].password===values.password){
+        //         console.log("Success");
+        //         navigate("/");
+        //     }
+        //     else{
+        //         alert("Incorrect Password")
+        //     }
+        //    })
+
+        console.log("submit");
+        fetch("http://localhost:9000/auth/login",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(values)
+        })
+        .then(res=>res.json())
+        .then(data=>{
             console.log(data);
-            if(data.length===0){
-                alert("Email address does not exist")
+            console.log(data.access_token);
+
+            if(data.status===200){
+                localStorage.setItem("jwt_token",data.access_token)
+                navigate("/")
             }
-            if(data[0].password===values.password){
-                console.log("Success");
-                navigate("/");
-            }
-            else{
-                alert("Incorrect Password")
-            }
-           })
+        })
         },
         validationSchema:yup.object().shape({
             email:yup.string()

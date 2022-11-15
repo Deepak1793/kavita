@@ -1,9 +1,10 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {useFormik} from 'formik'
 import * as yup from 'yup'
+import { useNavigate } from "react-router-dom";
 
 export default function AddContact() {
-
+    const navigate = useNavigate();
     const formik=useFormik({
         initialValues:{
             firstname:"",
@@ -44,6 +45,27 @@ export default function AddContact() {
             .required("City cannot be left blank")
         })
     })
+
+    useEffect(() => {
+     fetch("http://localhost:9000/auth/isAuthenticated",{
+        method:"POST",
+        headers:{
+            "Authorization":`Bearer ${localStorage.getItem("jwt_token")}`
+        }
+     })
+     .then(res=>res.json())
+     .then(data=>{
+        console.log(data);
+        // if(data.status===401){
+        //     navigate("/login")
+        // }
+
+        if(!data.isAuthenticated){
+            navigate("/login")
+        }
+     })
+    }, [])
+    
   return (
     <div className="container">
         <div className="row">
