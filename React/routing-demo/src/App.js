@@ -15,7 +15,7 @@ import Login from "./Components/Login/Login";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      
       <Header/>
       <Routes>
       <Route path="/" element={<Home/>}/>
@@ -30,7 +30,7 @@ function App() {
 
       <Route path="*" element={<NotFound/>}/>
       </Routes>
-      </BrowserRouter>
+      
     </div>
   );
 }

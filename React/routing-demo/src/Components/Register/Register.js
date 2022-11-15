@@ -17,7 +17,7 @@ export default function Register() {
         },
         onSubmit:values =>{
             // console.log(values);
-            fetch("http://localhost:3004/users",{
+            fetch("http://localhost:9000/auth/register",{
                 method:'POST',
                 headers:{
                     "Content-Type":"application/json"
@@ -25,7 +25,11 @@ export default function Register() {
                 body:JSON.stringify(values)
             })
             .then(res=>res.json())
-            .then(data=>console.log(data))
+            .then(data=>
+                {
+                    console.log(data)
+                    console.log(data.message)
+                })
             .catch((e)=>console.log("Catch block executed"))
             .finally(console.log("Finally executed"))
         },

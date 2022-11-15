@@ -16,30 +16,6 @@
       "phone": 13213456456,
       "id": 2
     }
-  ],
-  "users": [
-    {
-      "firstname": "Devendra",
-      "lastname": "Kumar",
-      "email": "kumard@rbos.co.uk",
-      "city": "Delhi",
-      "phone": 13212312111,
-      "age": 20,
-      "password": "pass",
-      "confirmpassword": "pass",
-      "id": 1
-    },
-    {
-      "firstname": "Karthik",
-      "lastname": "Raj",
-      "email": "k@rbos.co.uk",
-      "city": "Delhi",
-      "phone": 13212312111,
-      "age": 20,
-      "password": "pass1",
-      "confirmpassword": "pass1",
-      "id": 2
-    }
-
   ]
+  
 }
