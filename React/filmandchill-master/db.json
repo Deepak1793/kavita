@@ -1,0 +1,260 @@
+{
+  "Register": [
+    {
+      "username": "ram",
+      "email": "ram@gl.com",
+      "password": "ram@12345",
+      "id": 4
+    },
+    {
+      "username": "Anu",
+      "email": "a@gmail.com",
+      "password": "Anu@2022",
+      "id": 5
+    },
+    {
+      "username": "Mohan",
+      "email": "m@gmail.com",
+      "password": "Moh@2022",
+      "id": 6
+    }
+  ],
+  "favorites": [
+    {
+      "key": 629176,
+      "email": "ram@gmail.com",
+      "title": "Samaritan",
+      "image": "https://image.tmdb.org/t/p/w500/vwq5iboxYoaSpOmEQrhq9tHicq7.jpg",
+      "rating": 7,
+      "voting": 839,
+      "id": 1
+    },
+    {
+      "key": 616037,
+      "email": "ram@gmail.com",
+      "title": "Thor: Love and Thunder",
+      "image": "https://image.tmdb.org/t/p/w500/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+      "rating": 6.8,
+      "voting": 2501,
+      "id": 2
+    },
+    {
+      "key": 882598,
+      "email": "a@gmail.com",
+      "title": "Smile",
+      "image": "https://image.tmdb.org/t/p/w500/aPqcQwu4VGEewPhagWNncDbJ9Xp.jpg",
+      "rating": 6.7,
+      "voting": 519,
+      "id": 3
+    },
+    {
+      "key": 505642,
+      "email": "m@gmail.com",
+      "title": "Black Panther: Wakanda Forever",
+      "image": "https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+      "rating": 7.6,
+      "voting": 597,
+      "id": 4
+    },
+    {
+      "key": 436270,
+      "email": "m@gmail.com",
+      "title": "Black Adam",
+      "image": "https://image.tmdb.org/t/p/w500/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg",
+      "rating": 6.9,
+      "voting": 1093,
+      "id": 5
+    }
+  ],
+  "BookedMovies": [
+    {
+      "email": "kirti@gmail.com",
+      "theaterName": "IP Cinemas",
+      "timing": "4:00PM",
+      "SeatNo": 23,
+      "movie": "Venom: Let There Be Carnage",
+      "isBooked": true,
+      "id": 1
+    },
+    {
+      "email": "kirti@gmail.com",
+      "theaterName": "IP Cinemas",
+      "timing": "4:00PM",
+      "SeatNo": 44,
+      "movie": "Venom: Let There Be Carnage",
+      "isBooked": true,
+      "id": 2
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "IP Cinemas",
+      "timing": "4:00PM",
+      "SeatNo": 26,
+      "movie": "Venom: Let There Be Carnage",
+      "isBooked": true,
+      "id": 3
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 8,
+      "movie": "Samaritan",
+      "isBooked": true,
+      "id": 4
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 9,
+      "movie": "Samaritan",
+      "isBooked": true,
+      "id": 5
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 30,
+      "movie": "Samaritan",
+      "isBooked": true,
+      "id": 6
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 31,
+      "movie": "Samaritan",
+      "isBooked": true,
+      "id": 7
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 52,
+      "movie": "Samaritan",
+      "isBooked": true,
+      "id": 8
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 53,
+      "movie": "Samaritan",
+      "isBooked": true,
+      "id": 9
+    },
+    {
+      "email": "ram@gmail.com",
+      "theaterName": "Cinemax",
+      "timing": "9:30AM",
+      "SeatNo": 9,
+      "movie": "Thor: Love and Thunder",
+      "isBooked": true,
+      "id": 10
+    },
+    {
+      "email": "a@gmail.com",
+      "theaterName": "PVR",
+      "timing": "10:00AM",
+      "SeatNo": 12,
+      "movie": "Smile",
+      "isBooked": true,
+      "id": 11
+    },
+    {
+      "email": "a@gmail.com",
+      "theaterName": "PVR",
+      "timing": "10:00AM",
+      "SeatNo": 52,
+      "movie": "Smile",
+      "isBooked": true,
+      "id": 12
+    },
+    {
+      "email": "a@gmail.com",
+      "theaterName": "PVR",
+      "timing": "10:00AM",
+      "SeatNo": 32,
+      "movie": "Smile",
+      "isBooked": true,
+      "id": 13
+    },
+    {
+      "email": "a@gmail.com",
+      "theaterName": "PVR",
+      "timing": "10:00AM",
+      "SeatNo": 92,
+      "movie": "Smile",
+      "isBooked": true,
+      "id": 14
+    },
+    {
+      "email": "a@gmail.com",
+      "theaterName": "PVR",
+      "timing": "10:00AM",
+      "SeatNo": 72,
+      "movie": "Smile",
+      "isBooked": true,
+      "id": 15
+    },
+    {
+      "email": "a@gmail.com",
+      "theaterName": "PVR",
+      "timing": "10:00AM",
+      "SeatNo": 13,
+      "movie": "Smile",
+      "isBooked": true,
+      "id": 16
+    },
+    {
+      "email": "m@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 89,
+      "movie": "Black Panther: Wakanda Forever",
+      "isBooked": true,
+      "id": 17
+    },
+    {
+      "email": "m@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 90,
+      "movie": "Black Panther: Wakanda Forever",
+      "isBooked": true,
+      "id": 18
+    },
+    {
+      "email": "m@gmail.com",
+      "theaterName": "PVR",
+      "timing": "7:00PM",
+      "SeatNo": 91,
+      "movie": "Black Panther: Wakanda Forever",
+      "isBooked": true,
+      "id": 19
+    },
+    {
+      "email": "m@gmail.com",
+      "theaterName": "PVR",
+      "timing": "1:30PM",
+      "SeatNo": 9,
+      "movie": "Black Panther: Wakanda Forever",
+      "isBooked": true,
+      "id": 20
+    },
+    {
+      "email": "m@gmail.com",
+      "theaterName": "PVR",
+      "timing": "1:30PM",
+      "SeatNo": 8,
+      "movie": "Black Panther: Wakanda Forever",
+      "isBooked": true,
+      "id": 21
+    }
+  ]
+}

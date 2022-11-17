@@ -1,0 +1,114 @@
+#seat {
+  background-color: #8581be;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Lato', 'sans-serif';
+  }
+  .movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .container {
+    perspective: 1000px;
+  }
+  .vacant {
+    background-color: #444451;
+    height: 40px;
+    width: 50px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .vacant:hover{
+    background-color:green;
+  }
+
+  .selected {
+    background-color: green;
+    color: #fff;
+    height: 40px;
+    width: 50px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .showcase li small {
+    margin-left: 10px;
+  }
+  .row {
+    display: flex;
+  }
+
+  .screen {
+    background-color: #fff;
+    color: black;
+    height: 75px;
+    width: 75%;
+    margin: 10px auto;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  }
+
+  .btn3{
+    border-radius: 50px;
+    background-color: crimson;
+    color: black;
+    width: 25px;
+    text-align: center;
+  }
+  .btn3:hover {
+    background-color: rgb(165, 165, 248);
+  }
+  .price {
+    padding: 15px;
+    text-align: right;
+  }
+  small{
+    color: #fff;
+  }
+  @media only screen and (max-width: 500px) {
+    .me-auto{
+      margin-top: 80px;
+    }
+    button.navbar-toggler{
+      position: absolute;
+      border: 0.5px solid black;
+      top: 5px;
+      right: 0;
+      color: white;
+      background-color: #444451;
+      z-index: 10000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.7rem;
+      margin-right: 5px;
+    }
+  }
