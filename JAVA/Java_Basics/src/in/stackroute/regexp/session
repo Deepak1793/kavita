@@ -44,9 +44,37 @@ metacharacters
 \W - [^a-zA-Z_0-9]
 \s
 \S
-....................
+...............................
+
+Principles of Object orientation
+---------------------------------
+- World is a collection of Object
+- Every object is useful, there is no useless object
+- Every object is the constant interaction with another object, no object lies in isolation
+- Every Object belongs to a type , technically we call the type as class . Class doesnot exists in reality what exists
+in reality is object
 
 
+Object
+-------
+- has part - property of object - Datatypes
+- does part -Behaviour  of Object - methods
+
+Instance variables
+- inside the class but outside the method
+- if values are not assigned, default values are allocated for it
+Reference variables - holds address/reference of the Object
+local variables - created within the methods
+static/class variables - it will static
+
+Benefits of using Method Overloading
+-------------------------------------
+-Method overloading increases the readability of the program.
+-This provides flexibility to programmers so that they can call the same method for different types of data.
+-This makes the code look clean.
+-This reduces the execution time because the binding is done in compilation time itself.
+-Method overloading minimises the complexity of the code.
+-With this, we can use the code again, which saves memory.
 
 
 
