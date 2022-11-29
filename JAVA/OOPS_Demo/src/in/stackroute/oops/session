@@ -54,3 +54,34 @@ batsman.........
  - Inherited methods - they are used as it is in a child class
  - Overidden methods - parent class method overidden by child class
  - Specialized methods - method present in child not in parent
+
+
+ Types of inheritance
+ - Single level
+ - Multi level
+ - Hierarchial
+ - Hybrid
+
+
+Polymorphism
+-------------
+Polymorphism in java is a concept by which we can perform single action in different ways
+
+Many forms
+
+There are 2 types of polymorphism
+- compile-time/dynamic polymorphism : Method Overloading
+- Runtime polymorphism: Method overriding
+
+Abstraction
+-----------
+process of hiding the implementation details and showing only the functionality
+
+or
+
+Process of hiding certain details and showing only essential information
+
+There are two ways to achieve abstraction in java
+
+Abstract class (0 to 100%)
+Interface (100%) - (has-a) - implements
