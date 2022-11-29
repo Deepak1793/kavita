@@ -84,4 +84,4 @@ Process of hiding certain details and showing only essential information
 There are two ways to achieve abstraction in java
 
 Abstract class (0 to 100%)
-Interface (100%) - (has-a) - implements
+Interface (100%) - (is-a) - implements 
