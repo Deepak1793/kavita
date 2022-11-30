@@ -128,6 +128,21 @@ Boxing - process of converting primitive value into its object form
 
 Unboxing - Process of converting object back to its primitive form
 
+-----------------------------------------
+Exception
+---------
+It is an event that occurs during the execution of program which distrupts the normal flow of execution
+
+try,catch,finally,throw,throws
+
+
+
+
+
+
+
+
+
 
 
 

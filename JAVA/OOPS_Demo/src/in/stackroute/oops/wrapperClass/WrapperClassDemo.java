@@ -11,19 +11,21 @@ public class WrapperClassDemo {
         char g='a';
         boolean h=false;*/
 
+        //Wrapper classes
        /* Byte a = new Byte((byte) 45);
         Integer c = new Integer(9786);
         Long d = new Long(23l);
         Boolean e = new Boolean(true);*/
 
-        int c =9786;
+
 
         //Boxing
+//        int c =9786;
 //        Integer a = new Integer(9786);
 //        System.out.println(a);
 
         //AutoBoxing
-
+        int c =9786;
         Integer a=9786;
         System.out.println(a);
 
