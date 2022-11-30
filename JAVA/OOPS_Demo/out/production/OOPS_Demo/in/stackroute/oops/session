@@ -84,4 +84,78 @@ Process of hiding certain details and showing only essential information
 There are two ways to achieve abstraction in java
 
 Abstract class (0 to 100%)
-Interface (100%)
+Interface (100%) - (is-a) - implements
+
+Association
+------------
+Has-A
+
+Human
+- Heart
+- Brain
+- Eyes.....
+
+- Bike
+- car
+- property
+- money
+
+----------------------
+Mobile
+- processor
+- battery
+- camera
+
+-charger
+
+-------------------------
+Project
+- code
+- name
+- startDate
+- endDate........
+
+---------------------------
+controller - dependancy of service
+service - dependancy of repository
+repository
+
+
+----------------------------------
+Boxing and Unboxing
+
+Boxing - process of converting primitive value into its object form
+
+Unboxing - Process of converting object back to its primitive form
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

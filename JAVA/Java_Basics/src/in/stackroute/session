@@ -60,12 +60,13 @@ Object
 - has part - property of object - Datatypes
 - does part -Behaviour  of Object - methods
 
-Instance variables
+#Instance variables
 - inside the class but outside the method
 - if values are not assigned, default values are allocated for it
-Reference variables - holds address/reference of the Object
-local variables - created within the methods
-static/class variables - it will static
+
+#Reference variables - holds address/reference of the Object
+#local variables - created within the methods
+#static/class variables - it will static
 
 Benefits of using Method Overloading
 -------------------------------------

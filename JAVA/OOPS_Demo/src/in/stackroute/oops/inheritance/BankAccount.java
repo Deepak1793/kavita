@@ -5,7 +5,8 @@ public class BankAccount {
     private int account_no;
     private String email;
     private int contact_no;
-    private double balance;
+//    private double balance;
+   private Double balance;
 
 
     public BankAccount() {
