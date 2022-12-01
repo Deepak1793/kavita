@@ -1,0 +1,20 @@
+SET
+     HashSet
+   1) Insertion order is not followed (random order).
+   2) Duplicates are not allowed.
+   3) Internal Data Structure is Hashing.
+   ----->Search operation is most efficient O(1)
+
+     Linked HashSet
+   1) Insertion order is followed.
+   2) Duplicates are not allowed.
+   3) Internal Data Structure is Hashing.
+
+
+     TreeSet
+   1) Insertion will be in Sorted Order (Ascending Order).
+   2) Duplicates are not allowed.
+   3) Internal Data Structure is- Balance Binary Search Tree.
+
+
+

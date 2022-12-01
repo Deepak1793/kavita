@@ -1,0 +1,23 @@
+Map---
+it is an interface having classes.
+map contains values on basis of key and value pair
+each value & key called entry
+key+value is pair/entry
+map is a collection of entries
+each key & each value is an object
+duplicate keys are not allowed, map contains unique keys, duplicate values allowed
+
+Hashmap----
+it is a class used when one needs to perform more search operations
+duplicate keys are not allowed
+not guarantee order
+
+HashMap and LinkedHashMap allow null keys and values, but TreeMap doesn't allow any null key or value.
+
+
+HashMap is the implementation of Map,
+but it doesn't maintain any order.
+LinkedHashMap is the implementation of Map.
+It inherits HashMap class. It maintains insertion order.
+TreeMap is the implementation of Map and SortedMap.
+It maintains ascending order.

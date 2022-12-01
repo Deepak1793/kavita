@@ -1,0 +1,21 @@
+ArrayList
+--------------------
+Insertion Order is maintained in ArrayList
+Duplicates are allowed
+
+LinkedList
+-----------
+Insertion Order is maintained in Linkedlist
+Duplicates are allowed
+
+Diff B/W ArrayList and LinkedList
+----------
+ArrayList:
+Internally making use of dynamic array data structure
+Good at performing insertion at rare end
+ArrayList make use of continues memory location
+
+LinkedList:
+Internally making use of doubly LinkedList data structure
+Good at performing insertion at any random position
+It makes use of dispersed memory location
