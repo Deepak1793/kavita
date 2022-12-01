@@ -1,0 +1,5 @@
+For sorting object with multiple properties
+
+Interface
+- Comparable - compareTo
+- Comparator - compare

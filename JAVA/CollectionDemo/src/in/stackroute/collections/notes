@@ -1,0 +1,18 @@
+For sorting object with multiple properties
+
+Interface
+- Comparable - compareTo
+- Comparator - compare
+
+
+----------------------------------------------------
+Shopping cart Application
+1.Products - name,id,quantity/units,price,brand........... shirt 10 , book 6
+2.Option for user to choose the product
+shirt 3
+book  5
+3.Remaining product available in the stock
+
+shirt 7
+book  1
+4.Products that user has purchased should be billed.
