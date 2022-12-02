@@ -1,0 +1,66 @@
+ new Scanner(System.in);----> read the input from users ---> from the console
+System.out.print("Output statement") ----> displayed the output ---> in the console
+
+ PrintSteam
+
+ reading the input from one file
+ displaying output in other file/ writing the output in other file
+
+
+ java.io ---> input output
+ -------
+
+ File ----> represents a file/folder in a system
+
+ Absolute path: D:\natwest_session_demo_codes\JAVA\I_O_Streams\sample.txt
+ Relative path: sample.txt
+
+ java.nio --> new input output
+ --------
+
+ Path ---> represents a file/folder in a system
+ Files ---> class for creating files/folders
+
+----------------------------------------------------------
+to read and write to files
+Stream class
+
+Character stream  ---> text file
+Byte stream ---> image file, pdf,zip.......
+
+
+Character stream
+
+Reader ---FileReader----BufferedReader
+
+Writer---FileWriter-----BufferedWriter
+
+
+Byte stream
+
+InputStream -- FileInputStream ---- BufferedInputStream
+OutputStream ---FileOutputStream ---- BufferedOutputStream
+
+
+
+try with resources
+
+try(
+risky code
+)
+{
+}
+
+
+
+
+
+try{
+
+}
+
+
+
+
+
+
