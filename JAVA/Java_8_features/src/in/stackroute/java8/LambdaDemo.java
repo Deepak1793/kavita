@@ -1,10 +1,8 @@
 package in.stackroute.java8;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class LambdaDemo {
     public static void main(String[] args) {
@@ -37,7 +35,7 @@ public class LambdaDemo {
 
         System.out.println(mProducts);
 
-        mProducts.forEach(pr-> System.out.println(pr));
+        mProducts.forEach(lalit-> System.out.println(lalit));
 
 
         // To sort the products
@@ -60,7 +58,17 @@ public class LambdaDemo {
         newProducts.sort(length);
         System.out.println(newProducts);
 
+        // Example for predicate
+        System.out.println("****************Removing product of 5 character*****************");
+        Predicate<String> productOf5Characters= prod-> prod.length()==5;
+        newProducts.removeIf(productOf5Characters);
+        System.out.println(newProducts);
 
+        //Biconsumer example
 
+        Map<String,Integer> scores = Map.of("Dhoni",50,"Virat",55);
+        scores.forEach((key,value)->{
+            System.out.println(key+" "+value);
+        });
     }
 }
