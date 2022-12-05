@@ -1,0 +1,89 @@
+Java 8
+
+Lambda expression
+-----------------
+
+String name="Kavitha";
+
+- Anonymous function
+-it can be passed to other function as a parameter
+- makes our code concise
+- introduces stream processing
+
+public double add(int a, int b){
+return a+b;
+}
+
+(int a, int b)->{
+return a+b;
+}
+
+(a, b)->{
+return a+b;
+}
+
+(a,b)->a+b;
+
+if there is only one parameter
+
+a-> a+b;
+
+
+---------------------------------
+(a, b)->{
+sum= a+b;
+return sum;
+}
+
+* We cannot assign lambda expression to any specific type
+* We can only assign lambda expression which is of type Functional interface
+* Functional interface are used to create lambda expression.
+
+
+----------------------------------------------------
+Functional interface
+------------------
+- It is a interface which contains only one abstract method
+- It can have n number of static and default methods
+
+-----------------------------------------------------
+
+Important functional interface
+------------------------
+
+Consumer - accepts a single input argument and returns no result. - accept( T t)
+Supplier - Represents a supplier of results. - get()
+Predicate - Represents a predicate (boolean-valued function) of one argument. - test(T t)
+Function - Represents a function that accepts one argument and produces a result. - apply(T t)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
