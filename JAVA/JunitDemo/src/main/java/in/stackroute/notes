@@ -1,0 +1,12 @@
+Junit 5 (Jupiter)
+
+- framework for writing unit test cases
+
+- TestRunners
+- Assertion methods
+ - integrates with popular assertion libraries like hamcrest and AssertJ
+assertEquals()
+assertThrows()
+assertTrue()
+assertFalse()
+...............

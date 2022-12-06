@@ -35,6 +35,7 @@ public class StreamsDemo {
       List<String> newData= newProducts
                 .stream()
                 .map(ele -> ele.toUpperCase())
+              .peek(item-> System.out.println(item))
                 .filter(prod -> prod.startsWith("P"))
 //                .peek(item-> System.out.println(item))
                 .sorted()
@@ -43,6 +44,7 @@ public class StreamsDemo {
                 //                .forEach(item-> System.out.println(item));
 //                .count()
                .collect(Collectors.toList());
+
 
 
         System.out.println(newData);
