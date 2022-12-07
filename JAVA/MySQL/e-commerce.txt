@@ -1,0 +1,132 @@
+CREATE DATABASE E_COMMERCE; 
+USE E_COMMERCE; 
+CREATE TABLE item( 
+itemcode VARCHAR(6) PRIMARY KEY, 
+itemtype VARCHAR(30),  
+descr VARCHAR(30) NOT NULL, 
+price int, 
+reorderlevel int, 
+qtyonhand int, 
+category CHAR(1) 
+); 
+CREATE TABLE quotation( 
+quotationid VARCHAR(6) PRIMARY KEY, 
+sname VARCHAR(30), 
+itemcode VARCHAR(10), 
+quotedprice int, 
+qdate DATE, 
+qstatus VARCHAR(10) CHECK(qstatus IN ('Accepted','Rejected','Closed')), foreign key(itemcode) REFERENCES item(itemcode)); 
+CREATE TABLE orders 
+( 
+orderid VARCHAR(6) PRIMARY KEY, 
+quotationid VARCHAR(6), 
+qtyordered int CHECK(qtyordered > 0), 
+orderdate DATE, 
+status VARCHAR(20) CHECK(status in ('Ordered','Delivered')),  pymtdate DATE,  
+delivereddate DATE, 
+amountpaid int, 
+pymtmode VARCHAR(20) CHECK(pymtmode in ('Cash','Cheque')), foreign key(quotationid) REFERENCES quotation(quotationid) );
+CREATE TABLE retailoutlet( 
+roid VARCHAR(6) PRIMARY KEY, 
+location VARCHAR(30) NOT NULL, 
+managerid int); 
+CREATE TABLE empdetails( 
+empid int PRIMARY KEY, 
+empname VARCHAR(20), 
+designation VARCHAR(20), 
+emailid VARCHAR(30), 
+contactno int, 
+worksin VARCHAR(6), 
+salary int, 
+foreign key(worksin) REFERENCES retailoutlet(roid) ); 
+CREATE TABLE retailstock( 
+roid VARCHAR(6), 
+itemcode VARCHAR(6), 
+unitprice int, 
+qtyavailable int, 
+PRIMARY KEY(roid, itemcode), 
+foreign key(roid) REFERENCES retailoutlet(roid), foreign key(itemcode) REFERENCES item(itemcode) ); 
+CREATE TABLE customer( 
+custid int PRIMARY KEY, 
+custtype VARCHAR(12), 
+custname VARCHAR(20) NOT NULL, 
+gender char(1), 
+spouse int, 
+emailid VARCHAR(30),  
+address VARCHAR(50), 
+foreign key(spouse) references customer(custid)
+); 
+CREATE TABLE purchasebill( 
+billid int PRIMARY KEY, 
+roid VARCHAR(6), 
+itemcode VARCHAR(6), 
+custid int, 
+billamount int, 
+billdate DATE, 
+quantity int, 
+foreign key(roid) REFERENCES retailoutlet (roid), 
+foreign key(itemcode) REFERENCES item(itemcode), 
+foreign key(custid) REFERENCES customer(custid) 
+); 
+INSERT INTO item VALUES('I1001', 'FMCG', 'Britannia Marie Gold Cookies',20, 100, 1000,'C'); INSERT INTO item VALUES('I1002', 'FMCG', 'Best Rice', 120,100,1000,'C'); INSERT INTO item VALUES('I1003', 'FMCG', 'Modern Bread', 15, 100,1000,'C'); INSERT INTO item VALUES('I1004','Apparels', 'Lee T-Shirt', 300, 100, 1000,'B'); INSERT INTO item VALUES('I1005','Apparels', 'Levis T-Shirt', 1700,100,1000,'B'); INSERT INTO item VALUES('I1006','Apparels', 'Satyapaul Sari', 7300, 100, 1000, 'A'); INSERT INTO item VALUES('I1007','Apparels', 'Allen Solly Tie', 600,100,1000,'C'); INSERT INTO item VALUES('I1008','Computer', 'Xbox gamepad',1500,100,50,'B'); INSERT INTO item VALUES('I1009','Computer','Microsoft Mouse', 700, 120, 50,'C'); INSERT INTO item VALUES('I1010','Computer','Intel C2D Processor', 6500, 50,25,'A'); INSERT INTO item VALUES('I1011','Computer','Intel Motherboard',5000, 50, 25, 'A'); INSERT INTO item VALUES('I1012','Computer','500GB Hard disk', 2500, 150, 50,'B'); INSERT INTO item VALUES('I1013','Computer','320GB Hard disk', 1800, 150, 50, 'B'); INSERT INTO item VALUES('I1014', 'FMCG', 'Aroma Bread', 17, 100,50,'C'); INSERT INTO item VALUES('I1015','Apparels', 'Arrow Jeans', 7300, 50,60,'A'); 
+INSERT INTO quotation VALUES('Q1001','Giant Store', 'I1008',1500,'2012-10-10','Rejected'); INSERT INTO quotation VALUES('Q1002','EBATs', 'I1008',1400,'2012-10-10','Closed'); INSERT INTO quotation VALUES('Q1003','EBATs','I1010',6200,'2012-10-10','Accepted'); INSERT INTO quotation VALUES('Q1004','Shop Zilla','I1010',6250,'2012-10-10','Rejected');
+INSERT INTO quotation VALUES('Q1005','Giant Store','I1009',850,'2012-10-10','Rejected'); INSERT INTO quotation VALUES('Q1006','VV Electronics','I1009',800,'2012-10-10','Closed'); INSERT INTO quotation VALUES('Q1007','Shop Zilla','I1012',2200,'2012-10-10','Rejected'); INSERT INTO quotation VALUES('Q1008','Shop Zilla','I1012',2150,'2012-10-10','Accepted'); INSERT INTO quotation VALUES('Q1009','Shop Zilla','I1005',1480,'2012-10-10','Accepted'); 
+INSERT INTO quotation VALUES('Q1010','Giant Store','I1005',1490,'2012-10-10','Rejected'); INSERT INTO quotation VALUES('Q1011','EBATs','I1002',120,'2012-10-10','Rejected'); 
+INSERT INTO quotation VALUES('Q1012','VV Electronics','I1002',120,'2012-10-10','Rejected'); INSERT INTO quotation VALUES('Q1013','Giant Store','I1012',2150,'2012-10-10','Accepted'); 
+INSERT INTO orders VALUES('O1001','Q1002',100,'2012-10-10','Delivered','2012-10-10','2012-10-10', 140000,'Cash'); INSERT INTO orders VALUES('O1002','Q1006',150,'2012-10-10','Ordered',NULL,NULL,NULL,NULL); INSERT INTO orders VALUES('O1003','Q1003',50,'2012-10-10','Delivered','2012-10-10', '2012-10-10', 310000, 'Cash'); INSERT INTO orders VALUES('O1004','Q1006',100,'2012-10-10','Delivered','2012-10-10','2012-10-10',80000,'Cheque'); INSERT INTO orders VALUES('O1005','Q1002',50,'2012-10-10','Delivered','2012-10-10','2012-10-10', 70000,'Cheque'); INSERT INTO orders VALUES('O1006','Q1008',75,'2012-10-10','Delivered','2012-10-10','2012-10-10',161250,'Cash'); INSERT INTO orders VALUES('O1007','Q1009',50,'2012-10-10','Ordered',NULL,NULL,NULL,NULL); INSERT INTO orders VALUES('O1008','Q1013',75,'2012-10-10','Ordered',NULL,NULL,NULL,NULL); 
+INSERT INTO retailoutlet VALUES('R1001','California', 1002); 
+INSERT INTO retailoutlet VALUES('R1002','New York', 1006); 
+INSERT INTO retailoutlet VALUES('R1003','Dallas', NULL); 
+INSERT INTO retailstock VALUES ('R1001','I1001', 21.25, 28); 
+INSERT INTO retailstock VALUES ('R1001','I1002',112.00, 20); 
+INSERT INTO retailstock VALUES ('R1001','I1003', 18.50, 20); 
+INSERT INTO retailstock VALUES ('R1001','I1004', 353.00, 100); 
+INSERT INTO retailstock VALUES ('R1001','I1007', 709.00, 50); 
+INSERT INTO retailstock VALUES ('R1001','I1006', 7350.00, 20); 
+INSERT INTO retailstock VALUES ('R1001','I1010', 6199.00, 100); 
+INSERT INTO retailstock VALUES ('R1001','I1011', 5340.00, 150); 
+INSERT INTO retailstock VALUES ('R1001','I1012', 2510.00, 50); 
+INSERT INTO retailstock VALUES ('R1001','I1013', 2204.00, 50); 
+INSERT INTO retailstock VALUES ('R1001','I1015', 7700.00, 60); 
+INSERT INTO retailstock VALUES ('R1002','I1001',25.25, 25); 
+INSERT INTO retailstock VALUES ('R1002','I1002', 139.00, 50); 
+INSERT INTO retailstock VALUES ('R1002','I1003', 21.00, 20);
+INSERT INTO retailstock VALUES ('R1002','I1004', 400.00, 110); 
+INSERT INTO retailstock VALUES ('R1002','I1005' , 1751.00, 60); 
+INSERT INTO retailstock VALUES ('R1002','I1006', 7499.00, 50); 
+INSERT INTO retailstock VALUES ('R1002','I1007', 799.00, 20); 
+INSERT INTO retailstock VALUES ('R1002','I1008', 2499.00, 70); 
+INSERT INTO retailstock VALUES ('R1002','I1009', 903.00, 80); 
+INSERT INTO retailstock VALUES ('R1002','I1010', 6801.00, 20); 
+INSERT INTO retailstock VALUES ('R1002','I1011', 5402.00, 30); 
+INSERT INTO retailstock VALUES ('R1002','I1012', 2900.50, 130); 
+INSERT INTO retailstock VALUES ('R1002','I1013', 2300.50, 60); 
+INSERT INTO retailstock VALUES ('R1002','I1014', 29.25, 75); 
+INSERT INTO retailstock VALUES ('R1002','I1015', 7400.00, 65); 
+INSERT INTO retailstock VALUES ('R1003','I1012', 3000.50, 50); 
+INSERT INTO retailstock VALUES ('R1003','I1015', 7800.00, 40); 
+INSERT INTO retailstock VALUES ('R1003','I1008', 2600.00, 30); 
+INSERT INTO empdetails VALUES(1001, 'George', 'Administrator', 'george@easy.com', '904582', 'R1001', 6000); INSERT INTO empdetails VALUES(1002, 'Kevin', 'Manager', 'kevin@easy.com', '904582', 'R1001', 6500); INSERT INTO empdetails VALUES(1003, 'Lisa', 'Billing Staff', 'lisa@easy.com', '904582', 'R1001', 3000); INSERT INTO empdetails VALUES(1004, 'Allen', 'Super Manager', 'allen@easy.com', '904582', NULL,9000); INSERT INTO empdetails VALUES(1005, 'Peter', 'Administrator', 'peter@easy.com', '8923610', 'R1002', 6000); INSERT INTO empdetails VALUES(1006, 'John', 'Manager', 'john@easy.com',NULL, 'R1002', 6500); INSERT INTO empdetails VALUES(1007, 'Sam', 'Billing Staff', 'sam@easy.com','8038106', 'R1002', 3000); INSERT INTO empdetails VALUES(1008, 'Megan', 'Manager', 'megan5@easy.com', '9481083', 'R1002', 5000); INSERT INTO empdetails VALUES(1009, 'Henry', 'Billing Staff', 'henry@easy.com', '7820179', 'R1002', 5000); INSERT INTO empdetails VALUES(1010, 'Cris', 'Billing Staff', 'cris@easy.com',NULL, 'R1001', 2800); INSERT INTO empdetails VALUES(1011, 'Donald', 'Billing Staff','donald@easy.com', '749072', 'R1001', 2900); INSERT INTO empdetails VALUES(1012, 'Edwin', 'Billing Staff','edwin@easy.com', '9820984', 'R1002', 2500); INSERT INTO empdetails VALUES(1013, 'Clara', 'Security','clara@easy.com','93871093', 'R1001', 2000); INSERT INTO empdetails VALUES(1014, 'Michael', 'Security', 'michael@easy.com', '93871093', 'R1002', 2000); 
+INSERT INTO customer VALUES(2001, 'Regular', 'John', 'M', Null, 'john@easy.com', 'Allen Street, New York'); INSERT INTO customer VALUES(2002, 'Regular', 'Jason', 'M', Null, 'jason@adgm.in', 'Richmond Parkway, California'); INSERT INTO customer VALUES(2003, 'Privileged', 'Sam', 'M', Null, 'sam@xyz.corp', 'Ann Street, New York'); INSERT INTO customer VALUES(2004, 'Privileged', 'Susan', 'F', Null,'susan@adgm.in', 'Allen Street, New York');
+INSERT INTO customer VALUES(2005, 'Privileged', 'Nancy', 'F', Null,'nancy@xyz.corp', 'East Fork Road, California'); INSERT INTO customer VALUES(2006, 'Regular', 'Rachel', 'F', Null,'rachel1@easy.com', 'Charles Street, New York'); INSERT INTO customer VALUES(2007, 'Regular', 'Dexter', 'M', Null,'dexter2@easy.com', 'Beak Street, New York'); 
+INSERT INTO customer VALUES(2008, 'Regular', 'Thomas', 'M', Null,'thomas3@easy.com', 'Sand Hill Road, California'); INSERT INTO customer VALUES(2009, 'Regular', 'Christina', 'F', Null,'christina4@easy.com', 'Sand Hill Road, California'); INSERT INTO customer VALUES(2010, 'Regular', 'Megan', 'F', Null,'megan5@easy.com', 'Richmond Parkway, California'); UPDATE customer SET spouse = 2004 where custid = 2001; 
+UPDATE customer SET spouse = 2005 where custid = 2002; 
+UPDATE customer SET spouse = 2001 where custid = 2004; 
+UPDATE customer SET spouse = 2002 where custid = 2005; 
+UPDATE customer SET spouse = 2007 where custid = 2006; 
+UPDATE customer SET spouse = 2006 where custid = 2007; 
+UPDATE customer SET spouse = 2009 where custid = 2008; 
+UPDATE customer SET spouse = 2008 where custid = 2009; 
+INSERT INTO purchasebill VALUES (5001,'R1001','I1002',2001,342.384,'2012-10-10',3); 
+INSERT INTO purchasebill VALUES (5002,'R1001','I1001',2002,86.615,'2012-10-10',4); 
+INSERT INTO purchasebill VALUES (5003,'R1001','I1004',2002,359.707,'2012-10-10',1); 
+INSERT INTO purchasebill VALUES (5004,'R1002','I1003',2003,64.197,'2012-10-10',3); 
+INSERT INTO purchasebill VALUES (5005,'R1002','I1002',2005,283.282,'2012-10-10',2); 
+INSERT INTO purchasebill VALUES (5006,'R1002','I1004',2004,1222.80,'2012-10-10',3); 
+INSERT INTO purchasebill VALUES (5007,'R1002','I1013',2007,2344.2095,'2012-10-10',1); 
+INSERT INTO purchasebill VALUES (5008,'R1002','I1007',2002,1628.362,'2012-10-10',2); 
+INSERT INTO purchasebill VALUES (5009,'R1001','I1011',2005,5441.46,'2012-10-10',1); 
+INSERT INTO purchasebill VALUES (5010,'R1001','I1013',2007,8983.504,'2012-10-10',4); 
+INSERT INTO purchasebill VALUES (5011,'R1001','I1015',2002,7846.30,'2012-10-10',1); 
+INSERT INTO purchasebill VALUES (5012,'R1002','I1008',2004,5092.962,'2012-10-10',2); 
+INSERT INTO purchasebill VALUES (5013,'R1002','I1010',2008,6930.219,'2012-10-10',1);
