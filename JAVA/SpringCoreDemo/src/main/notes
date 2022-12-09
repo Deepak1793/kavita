@@ -1,0 +1,67 @@
+Spring
+-------
+
+Enterprise application ===> Multi layered
+
+
+- Presentation/ Frontend layer - present the data to end users - React.js
+- Business/service layer - logic for computation - java+ spring framework
+- Data access layer - to store/retrieve the data - MySQL - SQL , MongoDB
+
+
+Spring - helps java development faster
+
+----------------------------------------------------------
+UserDao
+(DAO)-Data access layer
+url , pass ,username
+- connectToDB()
+- getUserDetails(id)
+
+
+LoginService - service layer
+
+authenticateUser(credentials) -- from UI
+{
+UserDao dao=new UserDao()
+dao.connectToDB()
+dao.getUserDetails(id)
+}
+
+---------------------------------------------------------------
+Dependancy Injection - spring
+
+Inversion of control
+
+Spring IOC container
+--------------------
+responsible for creating and maintaining lifecycle of the objects needed by the application.
+Objects are called as Beans
+
+Interface to create IOC container
+1.BeanFactory
+2.ApplicationContext
+   - classPathXMLApplicationContext
+   - FileSystemXMLApplicationContext
+   -AnnotationConfigApplicationContext
+   - WebApplicationContext
+
+
+configuration metadata
+------------------------
+- XML based configuration
+- Annotation based configuration
+- java based configuration
+
+
+ <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+
+
+
+
+

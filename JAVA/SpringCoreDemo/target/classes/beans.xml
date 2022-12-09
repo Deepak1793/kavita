@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--   constructor injection-->
+   <bean id="dao1" class="in.stackroute.springcore.di.xml.UserDaoImpl1">
+         <constructor-arg name="username" value="User3"/>
+         <constructor-arg name="password" value="pass3"/>
+         <constructor-arg name="dbUrl" value="url3"/>
+   </bean>
+
+<!--   setter injection-->
+   <bean id="dao2" class="in.stackroute.springcore.di.xml.UserDaoImpl2">
+      <property name="username" value="User4"/>
+      <property name="password" value="pass4"/>
+      <property name="dbUrl" value="url4"/>
+
+   </bean>
+
+</beans>
