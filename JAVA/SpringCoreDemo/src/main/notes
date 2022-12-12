@@ -65,6 +65,28 @@ Scopes of the bean
 singleton - it will give only one object
 prototype - it will give multiple objects
 
+Annotation based
+-----------------
+Spring provides ser of annotations those are called as stereo type annotations
+
+On top of class to create beans out of it
+@Component - generic annotation
+@Service
+@Repository
+@Controller
+@RestController
+
+DI
+@Autowired - constructor, setter, field(property)
+
+@Value
+@Scope
+@Primary
+@Qualifier
+
+call backs
+@PostConstruct
+@PreDestroy
 
 
 
