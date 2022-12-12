@@ -89,5 +89,32 @@ call backs
 @PreDestroy
 
 
+Java based configuration
+------------------------
+
+A java class represents a configuration.
+
+- seperate configuration class - @Configuration - on top of the class
+
+
+@Bean
+on top of the method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,29 +1,17 @@
-package in.stackroute.springcore.di.annotation;
+package in.stackroute.springcore.di.javabased;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-@Service
-//@Scope("prototype")
 public class LoginService {
-
 private UserDao dao;// has -A
 
     public LoginService() {
     }
 
 //     constructor injection
-    @Autowired
-    public LoginService(@Qualifier("dao1") UserDao dao) {
+     public LoginService(UserDao dao) {
         this.dao = dao;
     }
 
-    //setter based injection
+//    //setter based injection
 //    public void setDao(UserDao dao) {
 //        this.dao = dao;
 //    }
@@ -35,12 +23,10 @@ private UserDao dao;// has -A
 
     }
 
-    @PostConstruct
     public void initialize(){
         System.out.println("Login service initialised");
     }
 
-    @PreDestroy
     public void destroy(){
         System.out.println("Login service destroyed");
     }
