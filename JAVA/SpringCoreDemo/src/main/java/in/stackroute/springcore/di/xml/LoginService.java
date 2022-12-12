@@ -25,5 +25,13 @@ private UserDao dao;// has -A
 
     }
 
+    public void initialize(){
+        System.out.println("Login service initialised");
+    }
+
+    public void destroy(){
+        System.out.println("Login service destroyed");
+    }
+
 }
 

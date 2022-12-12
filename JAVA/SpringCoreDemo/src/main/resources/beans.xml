@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--   constructor injection-->
-   <bean id="dao1" class="in.stackroute.springcore.di.xml.UserDaoImpl1">
+   <bean id="dao1" class="in.stackroute.springcore.di.xml.UserDaoImpl1" primary="true">
          <constructor-arg name="username" value="User3"/>
          <constructor-arg name="password" value="pass3"/>
          <constructor-arg name="dbUrl" value="url3"/>
@@ -17,5 +17,19 @@
       <property name="password" value="pass4"/>
       <property name="dbUrl" value="url4"/>
    </bean>
+
+    <bean id="dao" class="in.stackroute.springcore.di.xml.UserDaoImpl2">
+        <property name="username" value="User5"/>
+        <property name="password" value="pass5"/>
+        <property name="dbUrl" value="url5"/>
+    </bean>
+
+<!--    <bean id="loginservice" class="in.stackroute.springcore.di.xml.LoginService" scope="prototype">-->
+<!--        <property name="dao" ref="dao1"/>-->
+<!--    </bean>-->
+
+    <bean id="loginservice2" class="in.stackroute.springcore.di.xml.LoginService" init-method="initialize" destroy-method="destroy" scope="singleton" autowire="byType">
+
+    </bean>
 
 </beans>
