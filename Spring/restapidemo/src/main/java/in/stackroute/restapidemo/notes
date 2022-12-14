@@ -1,0 +1,22 @@
+Contact REST API
+-----------------
+
+Resource
+- Contact
+
+URI
+- /api/v1/contacts
+
+Operations
+----------
+
+GET - /api/v1/contacts - all contacts
+POST - /api/v1/contacts - @RequestBody
+DELETE - /api/v1/contacts/{id}
+
+GET - /api/v1/contacts/{id}  - api/v1/contacts/1
+
+GET - /api/v1/contacts?cate=friends
+
+PUT - /api/v1/contacts/{id}
+
