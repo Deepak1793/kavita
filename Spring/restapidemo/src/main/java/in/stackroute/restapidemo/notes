@@ -10,13 +10,15 @@ URI
 Operations
 ----------
 
-GET - /api/v1/contacts - all contacts
-POST - /api/v1/contacts - @RequestBody
-DELETE - /api/v1/contacts/{id}
+GET - /api/v1/contacts - all contacts  - 200 - 0K
+POST - /api/v1/contacts                  201 - CREATED     - @RequestBody
+DELETE - /api/v1/contacts/{id}           204               - @PathVariable
 
-GET - /api/v1/contacts/{id}  - api/v1/contacts/1
+GET - /api/v1/contacts/{id}  - api/v1/contacts/1  - 200
 
-GET - /api/v1/contacts?cate=friends
+GET - /api/v1/contacts?cate=friends - 200
 
-PUT - /api/v1/contacts/{id}
+PUT - /api/v1/contacts/{id} - 200
 
+404 -NOTFOUND
+401 - CONFLICT
