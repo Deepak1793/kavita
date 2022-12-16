@@ -70,11 +70,11 @@ public class ContactController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-//    @PutMapping("/contacts/{id}")
-//    public ResponseEntity<Contact> editContact(@RequestBody Contact newContact, @PathVariable String id) throws ContactNotFoundException {
-//        Contact updatedContact = service.editContact(newContact, id);
-//        return new ResponseEntity<>(updatedContact,HttpStatus.OK);
-//    }
+    @PutMapping("/contacts/{id}")
+    public ResponseEntity<Contact> editContact(@RequestBody Contact newContact, @PathVariable String id) throws ContactNotFoundException {
+        Contact updatedContact = service.editContact(newContact, id);
+        return new ResponseEntity<>(updatedContact,HttpStatus.OK);
+    }
 
 
 

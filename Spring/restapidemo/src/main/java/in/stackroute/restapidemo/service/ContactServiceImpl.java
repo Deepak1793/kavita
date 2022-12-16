@@ -4,6 +4,7 @@ import in.stackroute.restapidemo.exceptions.ContactExistsException;
 import in.stackroute.restapidemo.exceptions.ContactNotFoundException;
 import in.stackroute.restapidemo.model.Contact;
 import in.stackroute.restapidemo.repository.ContactRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.Optional;
 
 @Service
 public class ContactServiceImpl implements ContactService{
+    @Autowired
     private ContactRepository repository;
 
     @Override
