@@ -10,6 +10,12 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+#springdoc:
+#  swagger-ui:
+#    path: /swagger-ui-custom.html
 
 
 

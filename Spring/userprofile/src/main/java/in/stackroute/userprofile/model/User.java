@@ -1,6 +1,8 @@
 package in.stackroute.userprofile.model;
 
-import jakarta.persistence.*;
+
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "REGD_USERS")

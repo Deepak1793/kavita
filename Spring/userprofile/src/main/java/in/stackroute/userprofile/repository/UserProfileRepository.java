@@ -12,7 +12,7 @@ public interface UserProfileRepository extends JpaRepository<User,Integer> {
 
     boolean existsByEmail (String email);
 
-    Optional<User> findByEmail(String email);
+//    Optional<User> findByEmail(String email);
 
     @Query("select u from User u where u.email = ?1")
     Optional<User> getUserByEmail(String email);

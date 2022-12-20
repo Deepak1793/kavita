@@ -13,6 +13,10 @@ public class APIExceptionHandeller {
         return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
     }
 
+    @ExceptionHandler(CredentialsMismatchException.class)
+    public ResponseEntity<?> handleCredentialsMismatchException(CredentialsMismatchException e){
+        return new ResponseEntity<>(e.getMessage(),HttpStatus.UNAUTHORIZED);
+    }
 
 
 }
