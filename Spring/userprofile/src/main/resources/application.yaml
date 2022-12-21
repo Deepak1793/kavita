@@ -17,7 +17,7 @@ spring:
 #  swagger-ui:
 #    path: /swagger-ui-custom.html
 
-
+#  http://localhost:9000/v2/api-docs
 
 
 

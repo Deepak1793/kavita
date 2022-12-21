@@ -19,7 +19,9 @@ public class UserServiceImpl implements UserService{
         if(repository.existsByEmail(newUser.getEmail())){
             throw new UserExistsException("User with the email already Exixts");
         }
-      return repository.save(newUser);
+        User user = repository.save(newUser);
+        return user;
+
     }
 
     @Override
