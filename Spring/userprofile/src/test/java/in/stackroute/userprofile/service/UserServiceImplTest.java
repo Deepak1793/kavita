@@ -83,6 +83,11 @@ class UserServiceImplTest {
 
     @Test
     public void givenUserCredentialsWhenInValidThenThrowException(){
+        when(repository.getUserByEmail(anyString())).thenReturn(Optional.empty());
+
+        assertThrows(CredentialsMismatchException.class,()->service.authenticateUser(credentialsOne));
+
+        verify(repository).getUserByEmail(anyString());
 
     }
 }
