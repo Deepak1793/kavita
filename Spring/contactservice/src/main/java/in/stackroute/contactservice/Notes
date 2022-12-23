@@ -7,7 +7,6 @@ abc - 20 contacts
 35 contacts
 
 kavitha - 10 contacts  - should link with email id
-
 -----------------------------------------------------------------
 @SpringBootApplication
 @SpringBootConfiguration
