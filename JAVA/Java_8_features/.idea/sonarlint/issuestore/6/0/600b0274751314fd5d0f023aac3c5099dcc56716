@@ -1,0 +1,25 @@
+
+V
+java:S1612
+"@Replace this lambda with method reference 'System.out::println'.(Š…¼Ô
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(Š…¼Ô
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¿“†
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ì­øúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ù“ÀŸşÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(çºÃÊ
+V
+java:S1612&"@Replace this lambda with method reference 'System.out::println'.(©ÚÍÎ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(©ÚÍÎ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(¥½‡ï
+Q	java:S125+"<This block of commented-out lines of code should be removed.(Ÿïš†
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(ı·°ÿÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(³Åğå
+Z
+java:S33588"DExtract this nested ternary operation into an independent statement.(ìŸºó
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(ı·°ÿÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(Ëàáùıÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(ı·°ÿÿÿÿÿ
+G
+java:S1602F",Remove useless curly braces around statement(«š„×üÿÿÿÿ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(µÿııÿÿÿÿ
