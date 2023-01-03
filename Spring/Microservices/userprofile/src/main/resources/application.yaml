@@ -32,3 +32,15 @@ eureka:
 
 #    14:48:25	Could not connect, server may not be running.	Unable to connect to localhost
 #https://studyopedia:com/errors-resolved/fix-cant-connect-to-mysql-server/:
+
+logging:
+  level:
+    in:
+      stackroute:
+        userprofile: WARN
+
+  file:
+    name: userprofileservice.log
+  pattern:
+    file: "%d %level %m\n"
+    console: "%d %level %m\n"

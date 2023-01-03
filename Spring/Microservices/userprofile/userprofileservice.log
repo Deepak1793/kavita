@@ -1,0 +1,155 @@
+2023-01-03 11:05:45.446  INFO 21376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 11:05:45.737  INFO 21376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 267 ms. Found 1 JPA repository interfaces.
+2023-01-03 11:05:46.202  INFO 21376 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dc0661eb-fae0-35d3-a4a6-1e212db162fb
+2023-01-03 11:05:47.045  INFO 21376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 11:05:47.047  INFO 21376 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 11:05:47.049  INFO 21376 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 11:05:47.050  INFO 21376 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 11:05:47.056  INFO 21376 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 11:05:47.074  INFO 21376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 11:05:47.075  INFO 21376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 11:05:47.527  INFO 21376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 11:05:47.527  INFO 21376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3551 ms
+2023-01-03 11:05:47.831  INFO 21376 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 11:05:47.907  INFO 21376 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 11:05:48.206  INFO 21376 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 11:05:48.439  INFO 21376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 11:05:48.979  INFO 21376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 11:05:49.021  INFO 21376 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 11:05:49.970  INFO 21376 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 11:05:49.985  INFO 21376 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 11:05:51.101  WARN 21376 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 11:05:51.806  INFO 21376 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 11:05:52.040  WARN 21376 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 11:05:52.088  INFO 21376 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 11:05:52.251  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 11:05:52.259  INFO 21376 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 11:05:52.306  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 11:05:52.306  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 11:05:52.307  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 11:05:52.307  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 11:05:52.307  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 11:05:52.307  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 11:05:52.307  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 11:05:52.771  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 11:05:52.779  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 11:05:52.783  INFO 21376 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 11:05:52.794  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672724152792 with initial instances count: 3
+2023-01-03 11:05:52.798  INFO 21376 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 11:05:52.798  INFO 21376 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672724152798, current=UP, previous=STARTING]
+2023-01-03 11:05:52.800  INFO 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001: registering service...
+2023-01-03 11:05:52.852  INFO 21376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 11:05:52.853  INFO 21376 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 11:05:52.863  INFO 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001 - registration status: 204
+-------------------------------------------------------------------------------------
+
+
+
+2023-01-03 11:09:07.977  INFO 10888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 11:09:08.183  INFO 10888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 189 ms. Found 1 JPA repository interfaces.
+2023-01-03 11:09:08.587  INFO 10888 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dc0661eb-fae0-35d3-a4a6-1e212db162fb
+2023-01-03 11:09:09.434  INFO 10888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 11:09:09.436  INFO 10888 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 11:09:09.436  INFO 10888 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 11:09:09.437  INFO 10888 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 11:09:09.443  INFO 10888 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 11:09:09.461  INFO 10888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 11:09:09.461  INFO 10888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 11:09:09.977  INFO 10888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 11:09:09.978  INFO 10888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3376 ms
+2023-01-03 11:09:10.367  INFO 10888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 11:09:10.455  INFO 10888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 11:09:10.806  INFO 10888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 11:09:11.024  INFO 10888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 11:09:11.581  INFO 10888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 11:09:11.640  INFO 10888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 11:09:12.644  INFO 10888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 11:09:12.659  INFO 10888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 11:09:13.549  WARN 10888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 11:09:14.250  INFO 10888 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 11:09:14.493  WARN 10888 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 11:09:14.528  INFO 10888 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 11:09:14.688  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 11:09:14.699  INFO 10888 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 11:09:14.755  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 11:09:14.755  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 11:09:14.756  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 11:09:14.756  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 11:09:14.756  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 11:09:14.756  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 11:09:14.756  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 11:09:15.146  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 11:09:15.155  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 11:09:15.160  INFO 10888 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 11:09:15.168  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672724355167 with initial instances count: 2
+2023-01-03 11:09:15.173  INFO 10888 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 11:09:15.176  INFO 10888 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672724355176, current=UP, previous=STARTING]
+2023-01-03 11:09:15.184  INFO 10888 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001: registering service...
+2023-01-03 11:09:15.224  INFO 10888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 11:09:15.225  INFO 10888 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 11:09:15.237  INFO 10888 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001 - registration status: 204
+2023-01-03 11:09:31.320  INFO 10888 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 11:09:31.320  INFO 10888 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672724371320, current=DOWN, previous=UP]
+2023-01-03 11:09:31.320  INFO 10888 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001: registering service...
+2023-01-03 11:09:31.327  INFO 10888 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001 - registration status: 204
+2023-01-03 11:09:31.350  INFO 10888 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 11:09:31.352  INFO 10888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 11:09:31.363  INFO 10888 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 11:09:31.363  INFO 10888 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 11:09:34.383  INFO 10888 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 11:09:34.395  INFO 10888 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001 - deregister  status: 200
+2023-01-03 11:09:34.415  INFO 10888 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-03 11:09:43.187  INFO 24732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-03 11:09:43.557  INFO 24732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 351 ms. Found 1 JPA repository interfaces.
+2023-01-03 11:09:44.067  INFO 24732 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=dc0661eb-fae0-35d3-a4a6-1e212db162fb
+2023-01-03 11:09:44.853  INFO 24732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2023-01-03 11:09:44.855  INFO 24732 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-01-03 11:09:44.855  INFO 24732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-01-03 11:09:44.856  INFO 24732 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-01-03 11:09:44.862  INFO 24732 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-01-03 11:09:44.877  INFO 24732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-03 11:09:44.877  INFO 24732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 11:09:45.302  INFO 24732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-03 11:09:45.302  INFO 24732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3812 ms
+2023-01-03 11:09:45.648  INFO 24732 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-03 11:09:45.731  INFO 24732 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-03 11:09:46.026  INFO 24732 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-03 11:09:46.197  INFO 24732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-03 11:09:46.764  INFO 24732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-03 11:09:46.812  INFO 24732 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-01-03 11:09:47.900  INFO 24732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-03 11:09:47.914  INFO 24732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 11:09:48.981  WARN 24732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-03 11:09:50.030  INFO 24732 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-03 11:09:50.336  WARN 24732 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 11:09:50.385  INFO 24732 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-03 11:09:50.632  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-03 11:09:50.652  INFO 24732 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-03 11:09:50.694  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-03 11:09:50.694  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-03 11:09:50.694  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-03 11:09:50.695  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-03 11:09:50.695  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-03 11:09:50.695  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-03 11:09:50.695  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-03 11:09:51.164  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-03 11:09:51.169  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-03 11:09:51.173  INFO 24732 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 11:09:51.185  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672724391182 with initial instances count: 3
+2023-01-03 11:09:51.192  INFO 24732 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-PROFILE-SERVICE with eureka with status UP
+2023-01-03 11:09:51.192  INFO 24732 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672724391192, current=UP, previous=STARTING]
+2023-01-03 11:09:51.197  INFO 24732 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001: registering service...
+2023-01-03 11:09:51.253  INFO 24732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2023-01-03 11:09:51.254  INFO 24732 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2023-01-03 11:09:51.271  INFO 24732 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001 - registration status: 204
+2023-01-03 11:11:17.606  INFO 24732 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-PROFILE-SERVICE with eureka with status DOWN
+2023-01-03 11:11:17.607  INFO 24732 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672724477607, current=DOWN, previous=UP]
+2023-01-03 11:11:17.608  INFO 24732 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001: registering service...
+2023-01-03 11:11:17.612  INFO 24732 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001 - registration status: 204
+2023-01-03 11:11:17.635  INFO 24732 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-03 11:11:17.638  INFO 24732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-03 11:11:17.647  INFO 24732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-03 11:11:17.648  INFO 24732 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-03 11:11:20.670  INFO 24732 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-03 11:11:20.686  INFO 24732 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-PROFILE-SERVICE/BLR-REG-335975.in.niit.com:user-profile-service:9001 - deregister  status: 200
+2023-01-03 11:11:20.699  INFO 24732 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

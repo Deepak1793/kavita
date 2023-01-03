@@ -1,0 +1,37 @@
+System.out.println("......")
+- statements are temporary
+- results in cluttering
+- difficult to locate the issues
+
+
+log
+---
+messages about the event happing in our application.
+
+logging frameworks
+-------------------
+JDK - Logging API (default)
+
+slf4j - simple logging facade for Java
+- Log4j ---- Log4j2
+- Logback
+
+
+Advantages of Logging Frameworks
+---------------------------------
+- levels of message
+
+DEBUG -->INFO -->WARN -->ERROR
+
+the default level of log message in INFO
+
+- log messages in different destinations
+ console, file, database
+
+- To customise the format of log messages
+
+
+
+
+
+
