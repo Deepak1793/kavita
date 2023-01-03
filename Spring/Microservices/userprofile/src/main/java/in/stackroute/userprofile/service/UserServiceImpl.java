@@ -15,35 +15,35 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService{
 
-    private Logger logger=LoggerFactory.getLogger(UserServiceImpl.class);
+//    private Logger logger=LoggerFactory.getLogger(UserServiceImpl.class);
     @Autowired
     private UserProfileRepository repository;
     @Override
     public User registerUser(User newUser) throws UserExistsException {
         if(repository.existsByEmail(newUser.getEmail())){
-            logger.error("User already exixts with the given email");
+//            logger.error("User already exixts with the given email");
             throw new UserExistsException("User with the email already Exixts");
         }
         User user = repository.save(newUser);
-        logger.info("User successfully registered");
+//        logger.info("User successfully registered");
         return user;
 
     }
 
     @Override
     public boolean authenticateUser(UserCredentials credentials) throws CredentialsMismatchException {
-        logger.debug("Accessing database for getting user credentials");
+//        logger.debug("Accessing database for getting user credentials");
         Optional<User> userByEmail = repository.getUserByEmail(credentials.getEmail());
         if(userByEmail.isEmpty()){
-            logger.error("User not found with the given email");
+//            logger.error("User not found with the given email");
             throw new CredentialsMismatchException("InValid credentials");
         }
         User user = userByEmail.get();
         if (user.getPassword().equals(credentials.getPassword())){
-            logger.info("user authenticated successfully");
+//            logger.info("user authenticated successfully");
             return true;
         }else{
-            logger.error("Password mismatch for the user with the given email");
+//            logger.error("Password mismatch for the user with the given email");
             throw new CredentialsMismatchException("InValid credentials");
         }
 

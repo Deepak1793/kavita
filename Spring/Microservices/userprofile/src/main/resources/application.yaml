@@ -37,10 +37,10 @@ logging:
   level:
     in:
       stackroute:
-        userprofile: WARN
+        userprofile: DEBUG
 
   file:
     name: userprofileservice.log
-  pattern:
-    file: "%d %level %m\n"
-    console: "%d %level %m\n"
+#  pattern:
+#    file: "%d %level %m\n"
+#    console: "%d %level %m\n"
