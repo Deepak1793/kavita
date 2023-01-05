@@ -12,6 +12,7 @@ public interface ContactRepository extends MongoRepository<Contact,String> {
 
     Optional<Contact> findByEmail(String email);
 
+   Optional <Contact> findByEmailAndUserEmail(String email,String userEmail);
    List<Contact> findByCategory(String category);
 
   List<Contact> findByUserEmail(String userEmail);

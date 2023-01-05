@@ -73,7 +73,7 @@ class UserServiceImplTest {
     public void givenUserCredentialsWhenValidThenReturnTrue() throws CredentialsMismatchException {
    when(repository.getUserByEmail("anu@gmail.com")).thenReturn(Optional.of(userOne));
 
-        boolean credentials = service.authenticateUser(credentialsOne).containsValue(String.class);
+        service.authenticateUser(credentialsOne).containsValue(String.class)
         assertTrue(credentials);
 
         verify(repository,times(1)).getUserByEmail(anyString());

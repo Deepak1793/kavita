@@ -34,8 +34,8 @@ public class ContactController {
     }
 
     @GetMapping("/contacts")
-    public List<Contact> getAllcontacts() {
-        return service.getAllContacts();
+    public List<Contact> getAllcontacts(@RequestHeader String email) {
+        return service.getAllContacts(email);
     }
 
 //    @PostMapping("/contacts")
@@ -58,8 +58,8 @@ public class ContactController {
 
 
     @PostMapping("/contacts")
-    public ResponseEntity<Contact> addContact(@RequestBody Contact newContact) throws ContactExistsException {
-        Contact contact = service.addContact(newContact);
+    public ResponseEntity<Contact> addContact(@RequestBody Contact newContact,@RequestHeader String email) throws ContactExistsException {
+        Contact contact = service.addContact(newContact,email);
         return new ResponseEntity<>(contact,HttpStatus.CREATED);
     }
 

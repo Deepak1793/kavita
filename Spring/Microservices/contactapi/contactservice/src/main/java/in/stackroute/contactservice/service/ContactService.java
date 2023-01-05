@@ -9,8 +9,8 @@ import in.stackroute.contactservice.model.Contact;
 import java.util.List;
 
 public interface ContactService {
-    public List<Contact> getAllContacts();
-    public Contact addContact(Contact contact) throws ContactExistsException;
+    public List<Contact> getAllContacts(String email);
+    public Contact addContact(Contact contact,String UserEmail) throws ContactExistsException;
     public void deleteContact(String contactId) throws ContactNotFoundException;
     public Contact getContactByEmail(String email) throws ContactNotFoundException;
     public List<Contact> getAllcontactsByCategory(String category);

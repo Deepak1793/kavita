@@ -62,7 +62,7 @@ Header.payload.signature
 
 
 signature
-encoded header . encoaded payload . secret key
+encoded header+encoaded payload+secret key
 
 
 

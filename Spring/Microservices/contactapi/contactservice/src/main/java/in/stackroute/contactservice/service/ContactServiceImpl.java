@@ -17,15 +17,16 @@ public class ContactServiceImpl implements ContactService{
     private ContactRepository repository;
 
     @Override
-    public List<Contact> getAllContacts() {
-       return repository.findAll();
+    public List<Contact> getAllContacts(String email) {
+       return repository.findByUserEmail(email);
     }
 
     @Override
-    public Contact addContact(Contact contact) throws ContactExistsException {
-        Optional<Contact> optionalContact = repository.findByEmail(contact.getEmail());
+    public Contact addContact(Contact contact,String userEmail) throws ContactExistsException {
+        Optional<Contact> optionalContact = repository.findByEmailAndUserEmail(contact.getEmail(), userEmail);
 
         if (optionalContact.isEmpty()){
+            contact.setUserEmail(userEmail);
             return repository.save(contact);
         }else{
             throw new ContactExistsException("Contact with the given email already exixts");
@@ -34,6 +35,7 @@ public class ContactServiceImpl implements ContactService{
 
     }
 
+    //Person A  ----> C;    Person B          ---> Person C
     @Override
     public void deleteContact(String contactId) throws ContactNotFoundException {
        if(repository.existsById(contactId)){
