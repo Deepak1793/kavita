@@ -23,7 +23,7 @@ public class ContactController {
     @Autowired
     private ContactService service;
 
-    @GetMapping("/info")
+    @GetMapping("/contacts/info")
     public String apinfo() {
         return "Contact API is running";
     }

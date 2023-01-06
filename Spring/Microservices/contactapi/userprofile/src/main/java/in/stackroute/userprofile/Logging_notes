@@ -64,6 +64,42 @@ Header.payload.signature
 signature
 encoded header+encoaded payload+secret key
 
+--------------------------------------------------------
+Microservice communication
+---------------------------
+
+Synchronous communication btw the microservice
+
+- Rest Template
+
+- Feign client
+
+
+userprofile service
+---------------------
+<dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+</dependency>
+
+- @EnableFeignClients
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
