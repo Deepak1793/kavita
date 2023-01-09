@@ -1,0 +1,5 @@
+package com.hackathon.wallet.services;
+
+public class CategoryService {
+
+}

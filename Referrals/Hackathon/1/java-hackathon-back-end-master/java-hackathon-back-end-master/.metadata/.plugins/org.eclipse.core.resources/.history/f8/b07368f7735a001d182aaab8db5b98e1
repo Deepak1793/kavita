@@ -1,0 +1,5 @@
+package com.hackathon.wallet.entities;
+
+public class User {
+
+}

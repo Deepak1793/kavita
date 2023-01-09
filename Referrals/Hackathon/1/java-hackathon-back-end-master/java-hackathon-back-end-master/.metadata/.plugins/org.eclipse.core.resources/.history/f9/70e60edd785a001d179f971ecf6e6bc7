@@ -1,0 +1,40 @@
+package com.hackathon.wallet.services.impl;
+
+import java.util.List;
+
+import com.hackathon.wallet.payloads.UserDto;
+import com.hackathon.wallet.repositories.UserRepo;
+
+public class UserServiceImpl implements UserService {
+	private UserRepo userRepo;
+	@Override
+	public UserDto createUser(UserDto user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto updateUser(UserDto user, Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto getUserById(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDto> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteUser(Integer userId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

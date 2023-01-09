@@ -1,0 +1,5 @@
+package com.hackathon.wallet.security;
+
+public class JwtAuthenticationEntryPoint {
+
+}
