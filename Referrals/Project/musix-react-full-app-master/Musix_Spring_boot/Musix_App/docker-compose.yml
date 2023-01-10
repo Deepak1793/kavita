@@ -1,0 +1,52 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:4.4.9-focal
+    ports: 
+      - 27017:27017
+    network_mode: host
+    container_name: mongocontainer
+    healthcheck:
+      test: 'exit 0' 
+  favservice: 
+    image: favserviceimage:v2
+    build: 
+      context: Musix_Favourite_Recommend/
+      dockerfile: Dockerfile.txt
+    restart: always
+    network_mode: host
+    container_name: favcontainer
+    depends_on:
+      - mongo
+    ports:
+      - 9093:9093
+    healthcheck:
+      test: 'exit 0'    
+  mysql:
+    image: mysql
+    ports: 
+      - 3306:3306
+    network_mode: host
+    container_name: sqlcontainer
+    environment: 
+      MYSQL_USER: userroot
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: musixapp
+      MYSQL_ROOT_PASSWORD: root
+    healthcheck:
+      test: 'exit 0'
+  musixloginservice:
+    image: musixloginserviceimages:v2
+    build: 
+      context: Musix_Register_Login/
+      dockerfile: Dockerfile.txt
+    restart: always
+    network_mode: host
+    container_name: musixlogincontainer
+    depends_on:
+      - mysql
+    ports:
+      - 8282:8282
+    healthcheck:
+      test: 'exit 0'      
+  

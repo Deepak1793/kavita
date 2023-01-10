@@ -1,0 +1,16 @@
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/ArtistData.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/ArtistDetail.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/Artist.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/Data.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/Favourite.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/controller/RecommendController.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/Artists.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/User.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/ArtistImage.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/Recommend.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/controller/FavouriteController.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/model/Tag.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/repository/RecommendRepository.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/MusixAppBackendApplication.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/repository/FavouriteRepository.java
+/home/ubuntu/Desktop/Musiz app/Musix_App-main/Musix_Spring_boot/Musix_App/Musix_Favourite_Recommend/src/main/java/com/example/demo/aspectj/LoggingAspect.java

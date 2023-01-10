@@ -1,0 +1,25 @@
+image: java:8-jdk
+stages:
+   - test
+   - build
+service:
+   -mysql:5.5
+variables:
+   MYSQL_USER: root
+   MYSQL_PASSWORD: admin
+   MYSQL_DATABASE: musixapp
+   MYSQL_URL: jdbc:mysql://mysql/musixapp?verifyServerCertificate=false&useSSL=false
+   MYSQL_ROOT_PASSWORD: admin
+test-job:
+  image: maven:3-jdk-8
+  stage: test
+  script: "mvn test -B"
+
+build-job:
+  image: maven:3-jdk-8
+  stage: build
+  script: "mvn package -U" 
+  artifacts:
+    paths:
+      - target/*.jar
+     

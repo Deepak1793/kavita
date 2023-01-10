@@ -1,0 +1,118 @@
+.headerlogo{
+  margin-right: 53%;
+    font-size: 24px;
+}
+
+
+.Artist-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 84px;
+}
+
+.usernamed{
+  color: #fff;
+  position: absolute;
+  font-weight: 700;
+  text-transform: capitalize;
+  right: 8%;
+  background-image: url(https://t3.ftcdn.net/jpg/02/97/09/00/240_F_297090054_BtUfnc9J7J3GVsUA7cYnjboZB5NDH8zI.jpg);
+  background-size: cover;
+  top: 20%;
+  border: 2px solid #3f51b5a6;
+  box-shadow: 0px 2px 14px 7px #3f51b5;
+  padding: 11px;
+  border-radius: 10px;
+}
+
+.artistdetailcard{
+  padding-top: 6%;
+}
+.cardnheader{
+  text-align: center;
+    padding: 9px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3f51b5;
+    text-transform: uppercase;
+}
+.artist-listing__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgdata{
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+a {
+  color:white;
+  text-decoration: none;
+}
+.buttondetails{
+  background-color: #549eeb;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #549eeb;
+}
+.testcard{
+  padding-left: 15%;
+  
+}
+.title {
+  
+  text-align: center;
+  color:white;
+  font-size: 2.8rem;
+  text-shadow: 2px 5px 7px red;
+  
+}
+
+.titlefav {
+  font-size: 2.5rem;
+  text-align: center;
+  color:#ffff;
+}
+.Details-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 84px;
+}
+.btninfon{
+  background-color: #3f51b5;
+    padding: 10px;
+    border-radius: 27%;
+}
+.headername{
+  color: #fff;
+  
+}
+
+.btninfon{
+  background-color: #3f51b5;
+    padding: 10px;
+    border-radius: 27%;
+}
+.btninfonp{
+  background-color: #3f51b5;
+    padding: 10px;
+    margin: 8px  !important;
+    border-radius: 27%;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35rem;
+}
+.MuiCardContent-root {
+  padding: 15px !important;
+}
+
+.backtohomebtn {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/11/23/35/musical-background-2842924_960_720.jpg);
+  background-size: cover;
+  text-transform: uppercase;
+}
