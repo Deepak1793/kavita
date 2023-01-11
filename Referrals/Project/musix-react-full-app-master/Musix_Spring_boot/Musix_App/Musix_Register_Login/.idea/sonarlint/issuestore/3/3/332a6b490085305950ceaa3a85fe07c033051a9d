@@ -1,0 +1,37 @@
+
+o
+java:S2293/"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ó¶È
+o
+java:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢´ùß
+o
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(ªÈÖó
+o
+java:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(«ÏÄó
+o
+java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰­¯¿
+t
+java:S2293R"YReplace the type specification in this constructor call with the diamond operator ("<>").(’±èĞùÿÿÿÿ
+o
+java:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰­¯¿
+o
+java:S2293j"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡ÒûØ
+t
+java:S2293m"YReplace the type specification in this constructor call with the diamond operator ("<>").(œÏÜÅùÿÿÿÿ
+x
+java:S1488\"]Immediately return this expression instead of assigning it to the temporary variable "token".(ş½È’øÿÿÿÿ
+V
+java:S4684)"@Replace this persistent entity with a simple POJO or DTO object.(®¸‘´
+<
+java:S1452)"&Remove usage of generic wildcard type.(®¸‘´
+A
+java:S1452<"&Remove usage of generic wildcard type.(ÊÃ„íúÿÿÿÿ
+U
+java:S1854O":Remove this useless assignment to local variable "result".(‹Šğ“ıÿÿÿÿ
+U
+java:S4684H"@Replace this persistent entity with a simple POJO or DTO object.(Û‡ì#
+;
+java:S1452H"&Remove usage of generic wildcard type.(Û‡ì#
+A
+java:S1481M"+Remove this unused "result" local variable.(’ğÄ¸
+;
+java:S1452f"&Remove usage of generic wildcard type.(ŒÚ‰D

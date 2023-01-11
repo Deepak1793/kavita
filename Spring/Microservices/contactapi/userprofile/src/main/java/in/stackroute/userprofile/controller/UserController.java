@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @RestController
@@ -26,9 +27,12 @@ public class UserController {
     }
 
     @PostMapping("login")
-    public ResponseEntity<?> loginUser(@RequestBody UserCredentials credentials) throws CredentialsMismatchException {
-        Map<String, String> token = service.authenticateUser(credentials);
-        return new ResponseEntity<>(token,HttpStatus.OK);
+    public ResponseEntity<?> loginUser(@RequestBody UserCredentials credentials, HttpSession session) throws CredentialsMismatchException {
+        String token = service.authenticateUser(credentials);
+
+        Map<String, ?> data = Map.of("jwt_token", token, "status", 200, "email", credentials.getEmail());
+
+        return new ResponseEntity<>(data,HttpStatus.OK);
 
     }
 }

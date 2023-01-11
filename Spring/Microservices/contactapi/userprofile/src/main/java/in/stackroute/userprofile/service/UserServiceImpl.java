@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public Map<String,String> authenticateUser(UserCredentials credentials) throws CredentialsMismatchException {
+    public String authenticateUser(UserCredentials credentials) throws CredentialsMismatchException {
 //        logger.debug("Accessing database for getting user credentials");
         Optional<User> userByEmail = repository.getUserByEmail(credentials.getEmail());
         if(userByEmail.isEmpty()){
@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService{
         if (user.getPassword().equals(credentials.getPassword())){
 //            logger.info("user authenticated successfully");
             String token = jwtGeneratorService.generateToken(credentials.getEmail());
-            return Map.of("jwt_token",token);
+            return token;
         }else{
 //            logger.error("Password mismatch for the user with the given email");
             throw new CredentialsMismatchException("InValid credentials");

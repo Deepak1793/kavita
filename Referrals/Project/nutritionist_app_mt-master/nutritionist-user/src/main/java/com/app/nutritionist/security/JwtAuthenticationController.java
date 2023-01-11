@@ -50,7 +50,7 @@ public class JwtAuthenticationController {
 
 		if (null == username || username.isEmpty()) {
 			throw new InvalidParameterException("Not found the userid, Please contact the support team");
-		}
+		}// validation framework
 		
 		if(null == password || password.isEmpty()) {
 			throw new UsernameNotFoundException("User not found, Please contact the support team");
