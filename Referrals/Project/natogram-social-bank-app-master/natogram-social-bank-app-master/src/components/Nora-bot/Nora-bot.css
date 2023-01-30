@@ -1,0 +1,57 @@
+.nora{
+    text-align: center;
+    background-color: '#5A287D​';
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+.react-chatbot-kit-chat-bot-avatar-icon {
+
+    background-image: url( '../../Images/nora.png' );
+    background-color: black;
+}
+
+.react-chatbot-kit-chat-header {
+    background-color: #5A287D;
+    color: #F4F0E8;
+}
+
+.react-chatbot-kit-chat-bot-avatar-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 0rem;
+    margin-right: 12.5px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url( '../../Images/nora.png' );
+    background-size: 30px 30px;
+  }
+
+  .react-chatbot-kit-chat-bot-message {
+    background-color: #009FAC;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: medium;
+    position: relative;
+    width: 184.5px;
+    margin-left: auto;
+    text-align: left;
+  }
+  
+  .react-chatbot-kit-chat-inner-container {
+    height: 500px;
+    background-color: #dbdada;
+    border-radius: 3px;
+    border-radius: 5px;
+  }

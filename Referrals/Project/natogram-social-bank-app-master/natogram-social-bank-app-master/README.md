@@ -1,0 +1,2 @@
+#Problem Statement:
+Social Bank connects play a very big role in digital marketing and reach to customers in promotion and direct to customer engagements today. Traditional banking platforms typically do not have a mechanism to connect to their consumers digitally on a personal level due to protocols and other rules and guidelines, so the need is to have a seamless integrated platform wherein it does not interfere with the Banks protocol, and customers are also connected.
