@@ -36,3 +36,5 @@ If user Forgot Password - POST - http://localhost:3001/register - expecting data
 ## To register for an API key, follow these steps:
 - You need to signup to [TMDB] (https://api.themoviedb.org/).
 - After registration, API key is generated for you.
+
+
